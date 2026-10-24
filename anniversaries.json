@@ -1,0 +1,460 @@
+{
+ "asof": "2026-10-23",
+ "researched": [
+  "00-0040663",
+  "00-0041438",
+  "00-0033077",
+  "00-0035689",
+  "00-0036875",
+  "00-0031588",
+  "00-0036264",
+  "00-0034796",
+  "00-0038797",
+  "00-0034857",
+  "00-0031408"
+ ],
+ "items": [
+  {
+   "players": [
+    "00-0040663"
+   ],
+   "team": "CLE",
+   "relation": "sister",
+   "name": "Haria Wise",
+   "date": "2023-10-23",
+   "precision": "day",
+   "detail": "Harold Fannin Jr.'s sister Haria Wise died Oct. 23, 2023, at age 20, during his sophomore season at Bowling Green.",
+   "source": "https://www.newsbreak.com/the-blade-1588774/3226737065130-fannin-thriving-for-bgsu-football-while-mourning-loss-of-sister",
+   "kind": "loss"
+  },
+  {
+   "players": [
+    "00-0041438"
+   ],
+   "team": "TEN",
+   "relation": "mother",
+   "name": "Ashley Griggs",
+   "date": "2023-07-16",
+   "precision": "day",
+   "detail": "Carnell Tate's mother, Ashley Griggs, was killed in a drive-by shooting in Chicago's Garfield Park neighborhood early on July 16, 2023, before his freshman season at Ohio State.",
+   "source": "https://www.thelantern.com/2023/07/football-mother-of-receiver-carnell-tate-killed-in-drive-by-shooting/",
+   "kind": "loss"
+  },
+  {
+   "players": [
+    "00-0033077"
+   ],
+   "team": "DAL",
+   "relation": "mother",
+   "name": "Peggy Prescott",
+   "date": "2013-11-03",
+   "precision": "day",
+   "detail": "Dak Prescott's mother, Peggy, died of colon cancer on Nov. 3, 2013, while he was at Mississippi State.",
+   "source": "https://heavy.com/sports/dallas-cowboys/dak-prescott-family/",
+   "kind": "loss"
+  },
+  {
+   "players": [
+    "00-0033077"
+   ],
+   "team": "DAL",
+   "relation": "brother",
+   "name": "Jace Prescott",
+   "date": "2020-04-23",
+   "precision": "day",
+   "detail": "Dak Prescott's older brother Jace died by suicide on April 23, 2020, at his home in Orange, Texas. Dak has since spoken often about mental health.",
+   "source": "https://heavy.com/sports/dallas-cowboys/dak-prescott-family/",
+   "kind": "loss"
+  },
+  {
+   "players": [
+    "00-0035689"
+   ],
+   "team": "BUF",
+   "relation": "brother",
+   "name": "Luke Knox",
+   "date": "2022-08-17",
+   "precision": "day",
+   "detail": "Dawson Knox's younger brother Luke, a 22-year-old FIU football player, was found dead on campus on the night of Aug. 17, 2022. Dawson has since worked on grief and suicide-prevention causes.",
+   "source": "https://www.nbcnews.com/news/us-news/luke-knox-brother-buffalo-bills-dawson-knox-college-football-player-di-rcna43907",
+   "kind": "loss"
+  },
+  {
+   "players": [
+    "00-0038797"
+   ],
+   "team": "SEA",
+   "relation": "father",
+   "name": "Manuel Wilson",
+   "date": "2009-08-11",
+   "precision": "day",
+   "detail": "Emanuel Wilson's father, Manuel Wilson, died Aug. 11, 2009, in Roanoke, Va. Wilson has talked about playing with his father in mind.",
+   "source": "https://www.packers.com/news/game-notes-with-late-father-in-mind-emanuel-wilson-propels-packers",
+   "kind": "loss"
+  },
+  {
+   "players": [
+    "00-0034857"
+   ],
+   "team": "BUF",
+   "relation": "grandmother",
+   "name": null,
+   "date": "2020-11-07",
+   "precision": "day",
+   "detail": "Josh Allen's grandmother died the day before the Bills' Week 9 win over Seattle on Nov. 8, 2020, and he played the next day. Fans donated heavily to a children's hospital in her honor.",
+   "source": "https://en.wikipedia.org/wiki/Josh_Allen",
+   "kind": "loss"
+  },
+  {
+   "players": [
+    "00-0036875"
+   ],
+   "team": "NE",
+   "relation": "father",
+   "name": "Robert Stevenson",
+   "date": "2025-03",
+   "precision": "month",
+   "detail": "Rhamondre Stevenson's father, Robert, died suddenly in March 2025 at age 54. Stevenson missed spring workouts and has worn a game-day tribute to him.",
+   "source": "https://www.profootballnetwork.com/?p=1334181",
+   "kind": "loss"
+  },
+  {
+   "players": [
+    "00-0031588"
+   ],
+   "team": "WAS",
+   "relation": "father",
+   "name": "Aron Diggs",
+   "date": "2008-01",
+   "precision": "month",
+   "detail": "Stefon Diggs' father, Aron, died of congestive heart failure in January 2008, when Stefon was 14. He helped raise his younger brothers, including Trevon.",
+   "source": "https://www.vikings.com/news/vikings-wr-stefon-diggs-guides-brothers-after-tragic-loss-16166962",
+   "kind": "loss"
+  },
+  {
+   "players": [
+    "00-0036264"
+   ],
+   "team": "GB",
+   "relation": "father",
+   "name": "Orbin Love",
+   "date": null,
+   "precision": "none",
+   "detail": "Jordan Love's father, Orbin, a police officer, died by suicide when Jordan was 14 (around 2012\u201313). Love wrote about it in The Players' Tribune in 2025.",
+   "source": "https://en.wikipedia.org/wiki/Jordan_Love",
+   "kind": "loss"
+  },
+  {
+   "players": [
+    "00-0034796"
+   ],
+   "team": "BAL",
+   "relation": "father",
+   "name": "Lamar Jackson Sr.",
+   "date": "2005",
+   "precision": "year",
+   "detail": "Lamar Jackson's father died of a heart attack in 2005, the same day as Lamar's grandmother. Lamar was 8.",
+   "source": "https://www.si.com/nfl/ravens/onsi/news/baltimore-ravens-lamar-jackson-shares-heartbreaking-double-loss-story",
+   "kind": "loss"
+  },
+  {
+   "players": [
+    "00-0031408"
+   ],
+   "team": "SF",
+   "relation": "father",
+   "name": "Mickey Evans",
+   "date": null,
+   "precision": "none",
+   "detail": "Mike Evans' father, Mickey, was killed by a family member at their Galveston, Texas, home when Mike was 9 (around 2002\u201303). Evans has spoken about forgiving the killer.",
+   "source": "https://www.tampabay.com/mike-evans-opens-up-about-overcoming-fathers-murder/2274753",
+   "kind": "loss"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0030506"
+   ],
+   "team": "KC",
+   "relation": "wife",
+   "name": "Taylor Swift",
+   "date": "2026-07-03",
+   "precision": "day",
+   "detail": "Travis Kelce married Taylor Swift on July 3, 2026, at Madison Square Garden in New York.",
+   "source": "https://www.si.com/onsi/athlete-lifestyle/travis-kelce-other-nfl-stars-who-married-during-2026-offseason"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0036912"
+   ],
+   "team": "PHI",
+   "relation": "wife",
+   "name": "Mya Danielle",
+   "date": "2026-06-13",
+   "precision": "day",
+   "detail": "DeVonta Smith married Mya Danielle on June 13, 2026, at the Four Seasons at Walt Disney World.",
+   "source": "https://www.si.com/onsi/athlete-lifestyle/travis-kelce-other-nfl-stars-who-married-during-2026-offseason"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0039923"
+   ],
+   "team": "NYG",
+   "relation": "wife",
+   "name": "Katya Kuropas",
+   "date": "2026-04-11",
+   "precision": "day",
+   "detail": "J.J. McCarthy married Katya Kuropas on April 11, 2026.",
+   "source": "https://www.si.com/onsi/athlete-lifestyle/travis-kelce-other-nfl-stars-who-married-during-2026-offseason"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0038041"
+   ],
+   "team": "DAL",
+   "relation": "wife",
+   "name": "Haley Cavinder",
+   "date": "2026-06-20",
+   "precision": "day",
+   "detail": "Jake Ferguson married former college basketball star Haley Cavinder on June 20, 2026.",
+   "source": "https://www.si.com/onsi/athlete-lifestyle/travis-kelce-other-nfl-stars-who-married-during-2026-offseason"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0040138"
+   ],
+   "team": "HOU",
+   "relation": "wife",
+   "name": "Aliyah Hunter",
+   "date": "2026-03-26",
+   "precision": "day",
+   "detail": "Jaylin Noel married Aliyah Hunter on March 26, 2026.",
+   "source": "https://www.si.com/onsi/athlete-lifestyle/travis-kelce-other-nfl-stars-who-married-during-2026-offseason"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0035676"
+   ],
+   "team": "NE",
+   "relation": "wife",
+   "name": "Kelsey Nicole Riley",
+   "date": "2026-05-16",
+   "precision": "day",
+   "detail": "A.J. Brown married Kelsey Nicole Riley on May 16, 2026.",
+   "source": "https://www.si.com/onsi/athlete-lifestyle/travis-kelce-other-nfl-stars-who-married-during-2026-offseason"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0034869"
+   ],
+   "team": "SEA",
+   "relation": "wife",
+   "name": "Katie Hoofnagle",
+   "date": "2026-04-03",
+   "precision": "day",
+   "detail": "Sam Darnold married Katie Hoofnagle on April 3, 2026, at Rancho Valencia in California.",
+   "source": "https://www.si.com/onsi/athlete-lifestyle/travis-kelce-other-nfl-stars-who-married-during-2026-offseason"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0039917"
+   ],
+   "team": "ATL",
+   "relation": "wife",
+   "name": "Olivia Carter",
+   "date": "2026-05-02",
+   "precision": "day",
+   "detail": "Michael Penix Jr. married Olivia Carter on May 2, 2026, at Chateau Elan in Georgia.",
+   "source": "https://www.si.com/onsi/athlete-lifestyle/travis-kelce-other-nfl-stars-who-married-during-2026-offseason"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0036894"
+   ],
+   "team": "PIT",
+   "relation": "wife",
+   "name": "Jillian Cataldo",
+   "date": "2026-06-20",
+   "precision": "day",
+   "detail": "Pat Freiermuth married Jillian Cataldo on June 20, 2026.",
+   "source": "https://www.si.com/onsi/athlete-lifestyle/travis-kelce-other-nfl-stars-who-married-during-2026-offseason"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0034857"
+   ],
+   "team": "BUF",
+   "relation": "wife",
+   "name": "Hailee Steinfeld",
+   "date": "2025-05-31",
+   "precision": "day",
+   "detail": "Josh Allen married actress Hailee Steinfeld on May 31, 2025, in Santa Barbara County, California.",
+   "source": "https://sportsish.substack.com/p/nfl-offseason-weddings-love-rings"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0036264"
+   ],
+   "team": "GB",
+   "relation": "wife",
+   "name": "Ronika Stone",
+   "date": "2025-06-29",
+   "precision": "day",
+   "detail": "Jordan Love married volleyball player Ronika Stone on June 29, 2025.",
+   "source": "https://sportsish.substack.com/p/nfl-offseason-weddings-love-rings"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0039851"
+   ],
+   "team": "NE",
+   "relation": "wife",
+   "name": "Ann Michael Hudson",
+   "date": "2025-06-21",
+   "precision": "day",
+   "detail": "Drake Maye married his childhood sweetheart Ann Michael Hudson on June 21, 2025, in North Carolina.",
+   "source": "https://www.si.com/onsi/athlete-lifestyle/who-is-drake-maye-s-wife-meet-childhood-sweetheart-ann-michael-maye"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0040718"
+   ],
+   "team": "JAX",
+   "relation": "wife",
+   "name": "Leanna Lenee",
+   "date": "2025-05-24",
+   "precision": "day",
+   "detail": "Travis Hunter married Leanna Lenee on May 24, 2025, in Chattanooga, Tennessee, about a month after the draft.",
+   "source": "https://www.complex.com/sports/a/markelibert/travis-hunter-marries-longtime-girlfriend-leanna-lenee"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0033280"
+   ],
+   "team": "SF",
+   "relation": "wife",
+   "name": "Olivia Culpo",
+   "date": "2024-06-29",
+   "precision": "day",
+   "detail": "Christian McCaffrey married Olivia Culpo on June 29, 2024, in Watch Hill, Rhode Island.",
+   "source": "https://kmph.com/news/entertainment/olivia-culpo-and-christian-mccaffreys-wedding-dazzles-rhode-island-westerly-ocean-house-49ers-saturday-june-29-2024"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0037834"
+   ],
+   "team": "SF",
+   "relation": "wife",
+   "name": "Jenna Brandt",
+   "date": "2024-03-09",
+   "precision": "day",
+   "detail": "Brock Purdy married his college sweetheart Jenna Brandt in Des Moines, Iowa, on Saturday, March 9, 2024.",
+   "source": "https://www.si.com/nfl/2024/03/10/brock-purdy-49ers-quarterback-marries-college-sweetheart"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0033106"
+   ],
+   "team": "DET",
+   "relation": "wife",
+   "name": "Christen Harper",
+   "date": "2024-06-22",
+   "precision": "day",
+   "detail": "Jared Goff married model Christen Harper on June 22, 2024, in Ojai, California.",
+   "source": "https://swimsuit.si.com/swimnews/christen-harper-gives-first-glance-at-her-stunning-summer-wedding-with-jared-goff-01j3zcq87cp7"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0033873"
+   ],
+   "team": "KC",
+   "relation": "wife",
+   "name": "Brittany Matthews",
+   "date": "2022-03-12",
+   "precision": "day",
+   "detail": "Patrick Mahomes married his high school sweetheart Brittany Matthews on March 12, 2022, in Hawaii.",
+   "source": "https://www.wmar2news.com/patrick-mahomes-brittany-matthews-got-married-hawaiian-wedding-ceremony"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0036971"
+   ],
+   "team": "JAX",
+   "relation": "wife",
+   "name": "Marissa Mowry",
+   "date": "2021-04-10",
+   "precision": "day",
+   "detail": "Trevor Lawrence married Marissa Mowry on Saturday, April 10, 2021, weeks before he was drafted first overall.",
+   "source": "https://sportsspectrum.com/sport/football/2021/04/12/trevor-lawrence-marissa-mowry-married/"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0034855"
+   ],
+   "team": "TB",
+   "relation": "wife",
+   "name": "Emily Wilkinson",
+   "date": "2019-07-06",
+   "precision": "day",
+   "detail": "Baker Mayfield married Emily Wilkinson in Malibu on Saturday, July 6, 2019.",
+   "source": "https://www.cleveland19.com/2019/07/07/baker-mayfield-shares-first-video-with-new-wife-emily-wilkinson-since-getting-married-malibu/"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0026498"
+   ],
+   "team": "LA",
+   "relation": "wife",
+   "name": "Kelly Hall",
+   "date": "2015-04-04",
+   "precision": "day",
+   "detail": "Matthew Stafford married Kelly Hall in Atlanta on Saturday, April 4, 2015.",
+   "source": "https://ajc.com/sports/matt-stafford-marries-kelly-hall-lavish-atlanta-ceremony/03m0fJ5fWpwvGRMTyPDfJJ"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0029604"
+   ],
+   "team": "LV",
+   "relation": "wife",
+   "name": "Julie Hampton",
+   "date": "2014-06-28",
+   "precision": "day",
+   "detail": "Kirk Cousins married Julie Hampton on June 28, 2014, in Atlanta.",
+   "source": "https://www.theknot.com/content/kirk-cousins-relationship"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0039732"
+   ],
+   "team": "DEN",
+   "relation": "wife",
+   "name": "Izzy Smoke",
+   "date": "2022-07",
+   "precision": "month",
+   "detail": "Bo Nix married Izzy Smoke, a former Auburn cheerleader, in July 2022.",
+   "source": "https://www.sportskeeda.com/nfl/news-bo-nix-s-wife-izzy-celebrates-3rd-wedding-anniversary-romantic-message-broncos-qb-he-s-better-best"
+  }
+ ]
+}

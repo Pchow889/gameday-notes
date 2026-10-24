@@ -1,0 +1,61 @@
+{
+  "asof": "2026-10-23",
+  "items": [
+    {
+      "date": "2026-10-10",
+      "type": "birth",
+      "players": [
+        "00-0033280"
+      ],
+      "team": "SF",
+      "headline": "Welcomed his second child",
+      "detail": "Christian McCaffrey and Olivia Culpo announced on Oct. 10 that their son, Roman Augustus, was born Sept. 29. He's the couple's second child.",
+      "source": "https://tmz.com/2026/10/10/olivia-culpo-gives-birth-to-second-baby-with-christian-mccaffrey/"
+    },
+    {
+      "date": "2026-10-18",
+      "type": "expecting",
+      "players": [
+        "00-0036971"
+      ],
+      "team": "JAX",
+      "headline": "Baby boy on the way",
+      "detail": "Trevor Lawrence and his wife Marissa are expecting a son, announced in June. Marissa held a baby shower around the London game vs. Houston, and no birth had been announced as of Oct. 18.",
+      "source": "https://sports.yahoo.com/articles/celebrating-baby-boy-trevor-lawrence-184015191.html"
+    },
+    {
+      "date": "2026-07-30",
+      "type": "expecting",
+      "players": [
+        "00-0037834"
+      ],
+      "team": "SF",
+      "headline": "Expecting baby No. 2",
+      "detail": "Brock Purdy and his wife Jenna announced in late July that their second child is coming, about a year after daughter Millie was born. No birth announcement found yet.",
+      "source": "https://www.si.com/onsi/athlete-lifestyle/brock-purdy-and-wife-jenna-announce-baby-no-2-just-weeks-before-nfl-season"
+    },
+    {
+      "date": "2026-10-18",
+      "type": "tribute",
+      "players": [
+        "00-0041438"
+      ],
+      "team": "TEN",
+      "headline": "Honored his late mother after TD",
+      "detail": "Rookie Carnell Tate caught a touchdown in the Week 6 win over the Colts and blew a kiss for his mother, Ashley Griggs, who was killed in a drive-by shooting in Chicago on July 16, 2023. He spoke about the tribute after the game.",
+      "source": "https://clutchpoints.com/nfl/tennessee-titans/titans-news-carnell-tate-tribute-mother-td-colts"
+    },
+    {
+      "date": "2026-10-21",
+      "type": "loss",
+      "players": [
+        "00-0033873",
+        "00-0030506"
+      ],
+      "team": "KC",
+      "headline": "Former teammate Allen Bailey died",
+      "detail": "Former Chiefs defensive end Allen Bailey died at 37; his family believes it was natural causes. He played for Kansas City from 2011 to 2018, overlapping with Travis Kelce and Patrick Mahomes, and the Chiefs, including Andy Reid and Mahomes, paid tribute this week.",
+      "source": "https://www.tmz.com/2026/10/21/allen-bailey-dead/"
+    }
+  ]
+}
