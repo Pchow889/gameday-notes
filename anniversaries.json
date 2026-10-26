@@ -1,17 +1,148 @@
 {
- "asof": "2026-10-23",
+ "asof": "2026-10-26",
  "researched": [
-  "00-0040663",
-  "00-0041438",
-  "00-0033077",
-  "00-0035689",
-  "00-0036875",
+  "00-0023459",
+  "00-0026498",
+  "00-0029604",
+  "00-0030279",
+  "00-0030506",
+  "00-0030565",
+  "00-0031408",
   "00-0031588",
-  "00-0036264",
+  "00-0032764",
+  "00-0033077",
+  "00-0033090",
+  "00-0033106",
+  "00-0033110",
+  "00-0033119",
+  "00-0033293",
+  "00-0033307",
+  "00-0033537",
+  "00-0033873",
+  "00-0033881",
+  "00-0033921",
+  "00-0034348",
+  "00-0034351",
+  "00-0034753",
   "00-0034796",
-  "00-0038797",
+  "00-0034827",
+  "00-0034829",
+  "00-0034844",
+  "00-0034855",
   "00-0034857",
-  "00-0031408"
+  "00-0034869",
+  "00-0034960",
+  "00-0035228",
+  "00-0035229",
+  "00-0035261",
+  "00-0035640",
+  "00-0035676",
+  "00-0035689",
+  "00-0035700",
+  "00-0035710",
+  "00-0036158",
+  "00-0036223",
+  "00-0036264",
+  "00-0036275",
+  "00-0036322",
+  "00-0036355",
+  "00-0036358",
+  "00-0036410",
+  "00-0036442",
+  "00-0036550",
+  "00-0036555",
+  "00-0036613",
+  "00-0036875",
+  "00-0036900",
+  "00-0036912",
+  "00-0036963",
+  "00-0036970",
+  "00-0036971",
+  "00-0036997",
+  "00-0037005",
+  "00-0037228",
+  "00-0037238",
+  "00-0037240",
+  "00-0037247",
+  "00-0037248",
+  "00-0037252",
+  "00-0037256",
+  "00-0037261",
+  "00-0037291",
+  "00-0037545",
+  "00-0037740",
+  "00-0037741",
+  "00-0037744",
+  "00-0037809",
+  "00-0037840",
+  "00-0038041",
+  "00-0038046",
+  "00-0038117",
+  "00-0038120",
+  "00-0038124",
+  "00-0038128",
+  "00-0038129",
+  "00-0038134",
+  "00-0038393",
+  "00-0038400",
+  "00-0038542",
+  "00-0038543",
+  "00-0038544",
+  "00-0038558",
+  "00-0038559",
+  "00-0038563",
+  "00-0038597",
+  "00-0038606",
+  "00-0038621",
+  "00-0038797",
+  "00-0038933",
+  "00-0038935",
+  "00-0038994",
+  "00-0038996",
+  "00-0038997",
+  "00-0039064",
+  "00-0039065",
+  "00-0039067",
+  "00-0039075",
+  "00-0039139",
+  "00-0039150",
+  "00-0039338",
+  "00-0039361",
+  "00-0039491",
+  "00-0039732",
+  "00-0039793",
+  "00-0039851",
+  "00-0039880",
+  "00-0039894",
+  "00-0039910",
+  "00-0039915",
+  "00-0039917",
+  "00-0039918",
+  "00-0039919",
+  "00-0040122",
+  "00-0040124",
+  "00-0040126",
+  "00-0040128",
+  "00-0040129",
+  "00-0040198",
+  "00-0040584",
+  "00-0040590",
+  "00-0040663",
+  "00-0040666",
+  "00-0040667",
+  "00-0040676",
+  "00-0040719",
+  "00-0040735",
+  "00-0040736",
+  "00-0040784",
+  "00-0041027",
+  "00-0041037",
+  "00-0041040",
+  "00-0041438",
+  "00-0041489",
+  "00-0041511",
+  "00-0041523",
+  "00-0041547"
  ],
  "items": [
   {
@@ -455,6 +586,305 @@
    "precision": "month",
    "detail": "Bo Nix married Izzy Smoke, a former Auburn cheerleader, in July 2022.",
    "source": "https://www.sportskeeda.com/nfl/news-bo-nix-s-wife-izzy-celebrates-3rd-wedding-anniversary-romantic-message-broncos-qb-he-s-better-best"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0037248"
+   ],
+   "team": "BUF",
+   "relation": "father",
+   "name": "James Cook",
+   "date": "2020-12-29",
+   "precision": "day",
+   "detail": "James Cook's father, James Cook Sr. (also father of Dalvin Cook), died unexpectedly on Tuesday, Dec. 29, 2020, at 46, during James' final season at Georgia.",
+   "source": "https://www.saturdaydownsouth.com/georgia-football/james-cook-expected-to-miss-peach-bowl-following-family-tragedy"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0032764"
+   ],
+   "team": "BAL",
+   "relation": "grandmother",
+   "name": "Gladys Henry",
+   "date": "2016-09-13",
+   "precision": "day",
+   "detail": "Derrick Henry's grandmother Gladys, who helped raise him and inspired his faith, died Sept. 13, 2016, two days after his NFL debut.",
+   "source": "https://www.sportskeeda.com/nfl/who-derrick-henry-s-grandmother-gladys-henry"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0036970"
+   ],
+   "team": "ATL",
+   "relation": "former teammate",
+   "name": "Rondale Moore",
+   "date": "2026-02-21",
+   "precision": "day",
+   "detail": "Kyle Pitts' close friend and former Falcons teammate Rondale Moore was found dead at his Indiana home on Feb. 21, 2026, at 25. Pitts later criticized players who skipped Moore's celebration of life.",
+   "source": "https://abc7chicago.com/post/rondale-moore-death-nfl-arizona-cardinals-minnesota-vikings-wide-receiver-found-dead-25-new-albany-indiana/18633963/"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0036410"
+   ],
+   "team": "CIN",
+   "relation": "father",
+   "name": "Eric Higgins",
+   "date": "2022",
+   "precision": "year",
+   "detail": "Tee Higgins' father, Eric, died in 2022. Higgins has called it one of the lowest points of his life and credits his mother, Lady Stewart, with carrying him through.",
+   "source": "https://www.essentiallysports.com/nfl-active-news-tee-higgins-parents-meet-lady-stewart-who-supported-the-wr-after-dad-eric-higgins-death/"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0033537"
+   ],
+   "team": "CLE",
+   "relation": "father",
+   "name": "Don Richardson",
+   "date": "2024-09",
+   "precision": "month",
+   "detail": "Deshaun Watson's father, Don Richardson, died in early September 2024; Watson announced it on Sept. 6, two days before the Browns' opener, and played that Sunday.",
+   "source": "https://www.cbssports.com/nfl/news/deshaun-watson-announces-death-of-father-two-days-before-cleveland-browns-season-opener/"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0036158"
+   ],
+   "team": "DEN",
+   "relation": "father",
+   "name": "Lawrence Dobbins",
+   "date": null,
+   "precision": "none",
+   "detail": "J.K. Dobbins' father, Lawrence, died of a stroke at 33 when J.K. was 15 (around 2014). Dobbins has said he plays to make him proud.",
+   "source": "https://www.baltimoreravens.com/news/j-k-dobbins-knows-his-father-would-be-proud"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0038996"
+   ],
+   "team": "GB",
+   "relation": "father",
+   "name": "Doug Kraft",
+   "date": "2013",
+   "precision": "year",
+   "detail": "Tucker Kraft's father, Doug, a former athlete, died in a plane accident in 2013 when Tucker was 12.",
+   "source": "https://www.essentiallysports.com/nfl-active-news-who-are-tucker-krafts-parents-meet-late-athlete-doug-kraft-and-widow-tausha-walter/"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0039075"
+   ],
+   "team": "LA",
+   "relation": "father",
+   "name": "Lionel Nacua",
+   "date": null,
+   "precision": "none",
+   "detail": "Puka Nacua's father, Lionel, died of complications from diabetes when Puka was 11 (around 2013). Nacua is often emotional before games and has honored him with custom cleats.",
+   "source": "https://www.therams.com/news/puka-nacua-s-causes-for-my-cause-my-cleats-honor-mother-and-late-father"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0033293"
+   ],
+   "team": "MIN",
+   "relation": "father",
+   "name": "Alvin Jones Sr.",
+   "date": "2021-04-06",
+   "precision": "day",
+   "detail": "Aaron Jones' father, Alvin Jones Sr., died suddenly at 57 on Tuesday, April 6, 2021. Jones later played with a necklace holding his father's ashes and scored 4 TDs on MNF that September.",
+   "source": "https://heavy.com/sports/green-bay-packers/aaron-jones-father-alvin-dies-at-57/"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0033921"
+   ],
+   "team": "TB",
+   "relation": "father",
+   "name": "Rod Godwin Sr.",
+   "date": "2024-01",
+   "precision": "month",
+   "detail": "Chris Godwin's father, Rod Christopher Godwin Sr., died in January 2024. In 2025 Godwin added \"Jr.\" to his name to honor him.",
+   "source": "https://www.cbssports.com/nfl/news/buccaneers-chris-godwin-adding-jr-to-his-name-to-honor-late-father/"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0039910"
+   ],
+   "team": "WAS",
+   "relation": "grandmother",
+   "name": "Betty Daniels",
+   "date": "2021-02-05",
+   "precision": "day",
+   "detail": "Jayden Daniels' grandmother Betty died of COVID-19 on Feb. 5, 2021, her 77th birthday, less than a month after his grandfather William.",
+   "source": "https://www.aol.com/sports/tragedy-triumph-jayden-daniels-found-020512918.html"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0039910"
+   ],
+   "team": "WAS",
+   "relation": "grandfather",
+   "name": "William Daniels",
+   "date": "2021-01-09",
+   "precision": "day",
+   "detail": "Jayden Daniels' grandfather William, 78, was taken off life support after battling COVID-19 on Jan. 9, 2021, his and Betty's wedding anniversary.",
+   "source": "https://www.aol.com/sports/tragedy-triumph-jayden-daniels-found-020512918.html"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0038129"
+   ],
+   "team": "TB",
+   "relation": "mother",
+   "name": "Sally Otton",
+   "date": "2022-09-20",
+   "precision": "day",
+   "detail": "Cade Otton's mother, Sally, died Sept. 20, 2022, in Tumwater, Washington, after years with Parkinson's disease, during his rookie season with the Bucs.",
+   "source": "https://www.si.com/college/washington/legends/bucs-embrace-otton-who-has-best-day-after-overcoming-tragedy"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0033873"
+   ],
+   "team": "KC",
+   "relation": "grandfather",
+   "name": "Randy Martin",
+   "date": "2025-02",
+   "precision": "month",
+   "detail": "Patrick Mahomes' grandfather Randy Martin died in February 2025; his mother Randi announced it on Feb. 14, days after Super Bowl LIX.",
+   "source": "https://www.aol.com/patrick-mahomes-grandfather-randy-died-175140385.html"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0033873"
+   ],
+   "team": "KC",
+   "relation": "grandmother",
+   "name": "Debbie Bates Martin",
+   "date": "2023-04",
+   "precision": "month",
+   "detail": "Patrick Mahomes' grandmother Debbie Bates Martin died in early April 2023 after weeks of health problems.",
+   "source": "https://www.essentiallysports.com/nfl-news-debbie-bates-martin-my-mom-randi-mahomes-remembers-patrick-mahomes-grandmother-ten-days-after-emotional-demise/"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0029604"
+   ],
+   "team": "LV",
+   "relation": "grandmother",
+   "name": "Jean",
+   "date": "2017-10",
+   "precision": "month",
+   "detail": "Kirk Cousins' grandmother Jean died suddenly in October 2017; he announced it on Oct. 22, the day before a Monday night game at Philadelphia.",
+   "source": "https://sportsspectrum.com/sport/football/2017/10/23/redskins-kirk-cousins-announces-passing-grandmother-day-monday-night-game-vs-philadelphia/"
+  },
+  {
+   "kind": "wedding",
+   "relation": "wife",
+   "precision": "day",
+   "players": [
+    "00-0033090"
+   ],
+   "team": "NE",
+   "name": "Parker Schmidly",
+   "date": "2018-06-30",
+   "detail": "Hunter Henry married Parker Schmidly, a labor and delivery nurse, on June 30, 2018, at The Grandeur House in Arkansas.",
+   "source": "https://www.arkansasonline.com/news/2018/jul/08/parker-elizabeth-schmidly-hunter-mark-h/"
+  },
+  {
+   "kind": "wedding",
+   "relation": "wife",
+   "precision": "day",
+   "players": [
+    "00-0033881"
+   ],
+   "team": "DEN",
+   "name": "Emily",
+   "date": "2024-04-12",
+   "detail": "Evan Engram married his wife Emily on April 12, 2024.",
+   "source": "https://www.sportskeeda.com/nfl/news-evan-engram-s-wife-emily-pours-heart-anniversary-message-broncos-te-you-answered-prayer"
+  },
+  {
+   "kind": "wedding",
+   "relation": "wife",
+   "precision": "day",
+   "players": [
+    "00-0038996"
+   ],
+   "team": "GB",
+   "name": "Baylee Jandahl",
+   "date": "2024-05-18",
+   "detail": "Tucker Kraft married Baylee Jandahl in an outdoor ceremony in Sioux Falls, South Dakota, on May 18, 2024.",
+   "source": "https://sg.news.yahoo.com/green-bay-packers-tight-end-163859766.html"
+  },
+  {
+   "kind": "wedding",
+   "relation": "wife",
+   "precision": "day",
+   "players": [
+    "00-0036223"
+   ],
+   "team": "IND",
+   "name": "Ayanna Chapman",
+   "date": "2023-03-15",
+   "detail": "Jonathan Taylor married his high school sweetheart Ayanna Chapman on March 15, 2023.",
+   "source": "https://www.sportskeeda.com/nfl/jonathan-taylor-wife"
+  },
+  {
+   "kind": "wedding",
+   "relation": "wife",
+   "precision": "day",
+   "players": [
+    "00-0038124"
+   ],
+   "team": "GB",
+   "name": "Lakyn Adkins",
+   "date": "2024-04-05",
+   "detail": "Christian Watson married Lakyn Adkins, his girlfriend of seven years, on Friday, April 5, 2024, at Stone Mountain Estates in Malibu.",
+   "source": "https://sg.news.yahoo.com/christian-watson-married-inside-nfl-160932430.html"
+  },
+  {
+   "kind": "wedding",
+   "relation": "wife",
+   "precision": "year",
+   "players": [
+    "00-0033921"
+   ],
+   "team": "TB",
+   "name": "Mariah DelPercio",
+   "date": "2021",
+   "detail": "Chris Godwin married Mariah DelPercio in 2021 after nine years together.",
+   "source": "https://www.sportskeeda.com/nfl/news-who-chris-godwin-s-wife-mariah-delpercio-all-need-know-buccaneers-star-wideout-s-partner"
+  },
+  {
+   "kind": "wedding",
+   "relation": "wife",
+   "precision": "day",
+   "players": [
+    "00-0039065"
+   ],
+   "team": "DET",
+   "name": "Callahan Dellinger",
+   "date": "2025-06-14",
+   "detail": "Sam LaPorta married Callahan Dellinger in a Catholic ceremony on June 14, 2025; Pope Leo XIV blessed the couple 10 days later.",
+   "source": "https://www.prideofdetroit.com/2025/6/25/24455462/lions-news-sam-laporta-gets-blessed-by-new-pope"
   }
  ]
 }

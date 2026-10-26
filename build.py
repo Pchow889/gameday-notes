@@ -6,7 +6,8 @@ milestones in reach, 2026 league ranks and "vs former team" flags.
 Merges two hand-researched inputs from the same folder:
   pfr_leaderboard.json  - Pro Football Reference "Upcoming Milestones and Leaderboard Movement"
   news.json             - notable personal/off-field events
-  anniversaries.json    - dated family losses (parents, siblings, children...) for anniversary flags
+  anniversaries.json    - dated family losses and weddings for anniversary flags
+  recap.json            - notable moments from each player's last game (records, career highs, streaks)
 Writes data.js (window.GAMEDAY = {...}) for the page.
 
 Usage: python3 -I build.py <workdir>
@@ -228,12 +229,23 @@ def load(name, default):
 pfr = load("pfr_leaderboard.json", {"asof": None, "milestones": [], "leaderboards": []})
 news = load("news.json", {"asof": None, "items": []})
 anniv = load("anniversaries.json", {"asof": None, "researched": [], "items": []})
+recap = load("recap.json", {"asof": None, "items": []})
+# Refresh window: from the build day (Central time) through the Tuesday after the next Sunday,
+# so a Monday or Wednesday run covers Thursday, Sunday and Monday night games.
+# Override with --window YYYY-MM-DD YYYY-MM-DD.
+today_ct = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=5)).date()
+if "--window" in sys.argv:
+    i = sys.argv.index("--window"); win_start, win_end = sys.argv[i+1], sys.argv[i+2]
+else:
+    next_sun = today_ct + dt.timedelta(days=(6 - today_ct.weekday()) % 7)
+    win_start, win_end = str(today_ct), str(next_sun + dt.timedelta(days=2))
 out = {
+    "window": {"start": win_start, "end": win_end},
     "built": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
     "season": SEASON, "throughWeek": through_week,
     "lastGame": None if last_played is None else f"{last_played.away_team} at {last_played.home_team}, {pd.to_datetime(last_played.gameday):%a %b} {pd.to_datetime(last_played.gameday).day}",
     "depthChartAsOf": dc_time,
-    "games": sched, "players": tracked, "pfr": pfr, "news": news, "anniv": anniv,
+    "games": sched, "players": tracked, "pfr": pfr, "news": news, "anniv": anniv, "recap": recap,
 }
 with open("data.js", "w") as fh:
     fh.write("window.GAMEDAY=" + json.dumps(out, separators=(",", ":")) + ";\n")

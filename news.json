@@ -1,5 +1,5 @@
 {
-  "asof": "2026-10-23",
+  "asof": "2026-10-26",
   "items": [
     {
       "date": "2026-10-10",
@@ -21,7 +21,8 @@
       "team": "JAX",
       "headline": "Baby boy on the way",
       "detail": "Trevor Lawrence and his wife Marissa are expecting a son, announced in June. Marissa held a baby shower around the London game vs. Houston, and no birth had been announced as of Oct. 18.",
-      "source": "https://sports.yahoo.com/articles/celebrating-baby-boy-trevor-lawrence-184015191.html"
+      "source": "https://sports.yahoo.com/articles/celebrating-baby-boy-trevor-lawrence-184015191.html",
+      "until": "2026-12-31"
     },
     {
       "date": "2026-07-30",
@@ -32,7 +33,8 @@
       "team": "SF",
       "headline": "Expecting baby No. 2",
       "detail": "Brock Purdy and his wife Jenna announced in late July that their second child is coming, about a year after daughter Millie was born. No birth announcement found yet.",
-      "source": "https://www.si.com/onsi/athlete-lifestyle/brock-purdy-and-wife-jenna-announce-baby-no-2-just-weeks-before-nfl-season"
+      "source": "https://www.si.com/onsi/athlete-lifestyle/brock-purdy-and-wife-jenna-announce-baby-no-2-just-weeks-before-nfl-season",
+      "until": "2027-01-31"
     },
     {
       "date": "2026-10-18",
@@ -56,6 +58,52 @@
       "headline": "Former teammate Allen Bailey died",
       "detail": "Former Chiefs defensive end Allen Bailey died at 37; his family believes it was natural causes. He played for Kansas City from 2011 to 2018, overlapping with Travis Kelce and Patrick Mahomes, and the Chiefs, including Andy Reid and Mahomes, paid tribute this week.",
       "source": "https://www.tmz.com/2026/10/21/allen-bailey-dead/"
+    },
+    {
+      "date": "2026-10-10",
+      "type": "expecting",
+      "players": [
+        "00-0039917"
+      ],
+      "team": "ATL",
+      "until": "2027-05-31",
+      "headline": "First baby due spring 2027",
+      "detail": "Michael Penix Jr. and his wife Olivia (married May 2) announced on Instagram that they're expecting their first child in spring 2027, captioned \"Upgraded to mom and dad.\"",
+      "source": "https://www.si.com/onsi/athlete-lifestyle/falcons-qb-michael-penix-jr-wife-olivia-make-major-personal-announcement"
+    },
+    {
+      "date": "2026-06-14",
+      "type": "expecting",
+      "players": [
+        "00-0039065"
+      ],
+      "team": "DET",
+      "until": "2026-12-31",
+      "headline": "First baby on the way",
+      "detail": "Sam LaPorta and his wife Callahan announced on their first wedding anniversary (June 14) that they're expecting their first child. No birth has been announced yet.",
+      "source": "https://heavy.com/sports/nfl/detroit-lions/life-changing-announcement-lions-sam-laporta/"
+    },
+    {
+      "date": "2026-10-23",
+      "type": "personal",
+      "players": [
+        "00-0039065"
+      ],
+      "team": "DET",
+      "headline": "Walked back contract frustration",
+      "detail": "Two days after voicing frustration over not getting a contract extension, LaPorta said on Friday, Oct. 23 that he felt bad about the distraction and \"I want to play for this team.\"",
+      "source": "https://www.nfl.com/news/lions-te-sam-laporta-walks-back-contract-comments-i-want-to-play-for-this-team"
+    },
+    {
+      "date": "2026-10-09",
+      "type": "tribute",
+      "players": [
+        "00-0041251"
+      ],
+      "team": "TB",
+      "headline": "Brought his mom on set after first win",
+      "detail": "After his first NFL win (at Dallas on Thursday Night Football, Oct. 9), undrafted rookie Jalon Daniels called his mother, Star, onto the Prime Video postgame set. She had flown in from California.",
+      "source": "https://fox13news.com/news/ma-come-here-bucs-qb-jalon-daniels-shares-postgame-moment-mom-after-first-nfl-win"
     }
   ]
 }

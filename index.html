@@ -15,7 +15,7 @@
   --bg:#f6f8f5; --paper:#ffffff; --ink:#16201a; --muted:#5b6a60; --rule:#d9e1db;
   --turf:#1d6b3e; --turf-soft:#e3f0e7; --hi:#ffe866; --hi-ink:#3d3300;
   --cake:#b4246a; --cake-soft:#fbe6f0; --loss:#4c5a73; --loss-soft:#e7ebf2;
-  --gold:#8a5a00; --gold-soft:#fbf0d9; --rev:#a33b10; --rev-soft:#fbe9df; --mem:#5b3f8f; --mem-soft:#eee8f7; --wed:#0f6e74; --wed-soft:#dff1f1;
+  --gold:#8a5a00; --gold-soft:#fbf0d9; --rev:#a33b10; --rev-soft:#fbe9df; --mem:#5b3f8f; --mem-soft:#eee8f7; --wed:#0f6e74; --wed-soft:#dff1f1; --rec:#2f4f8a; --rec-soft:#e4ebf7;
   --display:"Saira Condensed","Arial Narrow",Arial,sans-serif;
   --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
@@ -24,12 +24,12 @@
   --bg:#0e1511; --paper:#151e18; --ink:#e6eee8; --muted:#94a59a; --rule:#26332b;
   --turf:#5fc58a; --turf-soft:#173323; --hi:#5c5211; --hi-ink:#fff4b0;
   --cake:#f07ab3; --cake-soft:#3a1828; --loss:#a9b6cf; --loss-soft:#232b3a;
-  --gold:#e9b85a; --gold-soft:#33280f; --rev:#f0916a; --rev-soft:#3a1f13; --mem:#c7b1f0; --mem-soft:#2a2240; --wed:#6fd3d6; --wed-soft:#123334; color-scheme:dark}}
+  --gold:#e9b85a; --gold-soft:#33280f; --rev:#f0916a; --rev-soft:#3a1f13; --mem:#c7b1f0; --mem-soft:#2a2240; --wed:#6fd3d6; --wed-soft:#123334; --rec:#9db8ec; --rec-soft:#1c2740; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0e1511; --paper:#151e18; --ink:#e6eee8; --muted:#94a59a; --rule:#26332b;
   --turf:#5fc58a; --turf-soft:#173323; --hi:#5c5211; --hi-ink:#fff4b0;
   --cake:#f07ab3; --cake-soft:#3a1828; --loss:#a9b6cf; --loss-soft:#232b3a;
-  --gold:#e9b85a; --gold-soft:#33280f; --rev:#f0916a; --rev-soft:#3a1f13; --mem:#c7b1f0; --mem-soft:#2a2240; --wed:#6fd3d6; --wed-soft:#123334; color-scheme:dark}
+  --gold:#e9b85a; --gold-soft:#33280f; --rev:#f0916a; --rev-soft:#3a1f13; --mem:#c7b1f0; --mem-soft:#2a2240; --wed:#6fd3d6; --wed-soft:#123334; --rec:#9db8ec; --rec-soft:#1c2740; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
 .wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
@@ -51,7 +51,7 @@ input[type=date],input[type=search]{font:500 14px var(--body);color:var(--ink);b
 .toolbar input[type=search]{flex:1 1 220px;max-width:340px}
 .toggle{display:flex;gap:6px;align-items:center;font-size:13.5px;cursor:pointer}
 .notice{margin:12px 0 0;padding:10px 12px;border-left:4px solid var(--gold);background:var(--gold-soft);font-size:13.5px;border-radius:0 6px 6px 0}
-.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:8px;overflow:hidden;margin:18px 0 8px}
+.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:8px;overflow:hidden;margin:18px 0 8px}
 .summary button{all:unset;box-sizing:border-box;background:var(--paper);padding:10px 14px;cursor:pointer;position:relative;display:block}
 .summary button:hover{background:var(--turf-soft)}
 .summary button:focus-visible{outline:2px solid var(--turf);outline-offset:-2px}
@@ -84,6 +84,7 @@ h2 small{font:500 13px var(--body);text-transform:none;letter-spacing:0;color:va
 .k.rank{background:var(--turf-soft);color:var(--turf)}
 .k.anniv{background:var(--mem-soft);color:var(--mem)}
 .k.wed{background:var(--wed-soft);color:var(--wed)}
+.k.recap{background:var(--rec-soft);color:var(--rec)}
 .game{background:var(--paper);border:1px solid var(--rule);border-radius:10px;margin:14px 0;overflow:hidden}
 .ghead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;padding:10px 16px;border-bottom:2px solid var(--ink)}
 .ghead h3{margin:0;font:800 26px/1 var(--display);text-transform:uppercase;letter-spacing:.02em}
@@ -114,6 +115,7 @@ h2 small{font:500 13px var(--body);text-transform:none;letter-spacing:0;color:va
 .tag.anniv{background:var(--mem-soft);color:var(--mem);border-color:transparent}
 .tag.anniv.soon{background:transparent;border:1px dashed var(--mem)}
 .tag.wed{background:var(--wed-soft);color:var(--wed);border-color:transparent}
+.tag.recap{background:var(--rec-soft);color:var(--rec);border-color:transparent}
 .tag.wed.soon{background:transparent;border:1px dashed var(--wed)}
 .detail{padding:4px 16px 14px 66px;font-size:13.5px;color:var(--ink)}
 .detail dl{display:grid;grid-template-columns:max-content 1fr;gap:3px 12px;margin:0 0 8px}
@@ -129,7 +131,9 @@ h2 small{font:500 13px var(--body);text-transform:none;letter-spacing:0;color:va
 footer{margin-top:36px;padding-top:12px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--muted)}
 footer a{color:var(--turf)}
 @media (max-width:720px){
-  .summary{grid-template-columns:repeat(2,1fr)}
+  .summary b{font-size:24px}
+  .summary button{padding:8px 10px}
+  .summary span{font-size:10.5px;letter-spacing:.04em}
   .teams{grid-template-columns:1fr}
   .team+.team{border-left:0;border-top:2px solid var(--rule)}
   .meta{text-align:left}
@@ -215,6 +219,7 @@ img{max-width:100%}
     <span><i class="k news">News</i> off-field</span>
     <span><i class="k anniv">Remember</i> anniversary of a family loss</span>
     <span><i class="k wed">Wedding</i> wedding anniversary</span>
+    <span><i class="k recap">Last game</i> records and standouts from last game</span>
   </div>
 
   <h2 id="games-h">Games <small id="gsub"></small></h2>
@@ -255,6 +260,8 @@ for (const [name,stat,cur,need,place] of D.pfr.leaderboards||[]) {
 }
 const annBy = new Map();
 for (const a of ((D.anniv||{}).items||[])) for (const id of a.players||[]) (annBy.get(id)||annBy.set(id,[]).get(id)).push(a);
+const recapBy = new Map();
+for (const r of ((D.recap||{}).items||[])) for (const id of r.players||[]) (recapBy.get(id)||recapBy.set(id,[]).get(id)).push(r);
 const newsBy = new Map();
 for (const n of (D.news.items||[])) for (const id of n.players||[]) (newsBy.get(id)||newsBy.set(id,[]).get(id)).push(n);
 
@@ -262,8 +269,8 @@ for (const n of (D.news.items||[])) for (const id of n.players||[]) (newsBy.get(
 const built = new Date(D.built);
 const builtISO = iso(new Date(Date.UTC(built.getUTCFullYear(),built.getUTCMonth(),built.getUTCDate())));
 function weekStart(s){ const d=parse(s); const back=(d.getUTCDay()-3+7)%7; return iso(new Date(d-back*DAY)); }
-const curWeekStart = weekStart(builtISO <= todayISO() ? todayISO() : builtISO);
-const curWeekEnd = iso(new Date(parse(curWeekStart).getTime()+6*DAY));
+const curWeekStart = (D.window && D.window.start) || weekStart(builtISO <= todayISO() ? todayISO() : builtISO);
+const curWeekEnd = (D.window && D.window.end) || iso(new Date(parse(curWeekStart).getTime()+6*DAY));
 const inCurWeek = s => s>=curWeekStart && s<=curWeekEnd;
 
 const gameDates = [...new Set(D.games.map(g=>g.date))].sort();
@@ -275,7 +282,7 @@ let sel = (() => {
   return gameDates.find(d => d>=t) || gameDates[gameDates.length-1];
 })();
 let showAll = false, query = "", cat = null;
-const CATS = {anniv:"Family anniversaries",wed:"Wedding anniversaries",cake:"Birthdays",mile:"Milestones in reach",lead:"All-time moves",news:"Off-field news",rev:"Revenge games"};
+const CATS = {recap:"Last-game notes",anniv:"Family anniversaries",wed:"Wedding anniversaries",cake:"Birthdays",mile:"Milestones in reach",lead:"All-time moves",news:"Off-field news",rev:"Revenge games"};
 const isCat = n => n.k.split(" ")[0]===cat && !(cat==="mile" && n.k.includes("soon"));
 try { showAll = localStorage.getItem("gd-all")==="1"; } catch(e){}
 $("all").checked = showAll;
@@ -289,7 +296,7 @@ function bdayIn(birth, from, to){ // returns ISO of birthday within [from,to] or
   }
   return null;
 }
-const newsFresh = (n, s) => { const age=(parse(s)-parse(n.date))/DAY; return n.type==="expecting" ? age<=120 && age>=-30 : age<=21 && age>=-7; };
+const newsFresh = (n, s) => { const age=(parse(s)-parse(n.date))/DAY; if (n.until) return age>=-7 && s<=n.until; return n.type==="expecting" ? age<=120 && age>=-30 : age<=21 && age>=-7; };
 
 function notesFor(p, game, s){
   const out = [];
@@ -323,6 +330,7 @@ function notesFor(p, game, s){
   }
   const live = inCurWeek(s); // stat notes only for this refresh week
   if (live) {
+    for (const r of recapBy.get(p.id)||[]) { const age=(parse(s)-parse(r.date))/DAY; if (age>0 && age<=13) out.push({k:"recap", pri:3, text:r.text, recap:r}); }
     for (const r of pfrL.get(p.id)||[]) out.push({k:"lead", pri:2, text:`Needs ${num(r.need)} to reach ${r.place} all-time in ${noun(r.stat)}`});
     const pm = pfrM.get(p.id)||[];
     for (const r of pm) out.push({k:"mile", pri:2, text:`${num(r.need)} away from ${r.target} career ${noun(r.stat)}`});
@@ -356,8 +364,9 @@ function statLine(o, pos){
 
 function playerRow(p, game, s, notes){
   const age = p.birth ? ageOn(p.birth, s) : null;
-  const tags = notes.map(n=>`<span class="tag ${n.k}">${esc(n.text)}</span>`).join("");
+  const tags = notes.map(n=>`<span class="tag ${n.k}">${esc(n.k==="recap" ? "Last game: "+n.text : n.text)}</span>`).join("");
   const married = (annBy.get(p.id)||[]).filter(a=>a.kind==="wedding").map(a=>`<li>${esc(a.detail)} <a href="${esc(a.source)}" target="_blank" rel="noopener">Source</a></li>`).join("");
+  const rec = (recapBy.get(p.id)||[]).map(r=>`<li><b>${esc(fmtDay(r.date))}:</b> ${esc(r.text)} <a href="${esc(r.source)}" target="_blank" rel="noopener">Source</a></li>`).join("");
   const fam = (annBy.get(p.id)||[]).filter(a=>a.kind!=="wedding").map(a=>`<li>${esc(a.detail)} <a href="${esc(a.source)}" target="_blank" rel="noopener">Source</a></li>`).join("");
   const news = (newsBy.get(p.id)||[]).map(n=>`<li><b>${esc(fmtDay(n.date))}:</b> ${esc(n.detail)} <a href="${esc(n.source)}" target="_blank" rel="noopener">Source</a></li>`).join("");
   const miles = (p.milestones||[]).map(m=>`<li>${esc(m.text)}${m.tier==="soon"?" (within ~3 games)":""}</li>`).join("");
@@ -378,6 +387,7 @@ function playerRow(p, game, s, notes){
     </dl>
     ${miles?`<b>Milestones</b><ul>${miles}</ul>`:""}
     ${news?`<b>Off the field</b><ul>${news}</ul>`:""}
+    ${rec?`<b>Last game</b><ul>${rec}</ul>`:""}
     ${married?`<b>Married</b><ul>${married}</ul>`:""}
     ${fam?`<b>Family losses</b><ul>${fam}</ul>`:""}
     ${p.pfr?`<a href="https://www.pro-football-reference.com/players/${p.pfr[0]}/${esc(p.pfr)}.htm" target="_blank" rel="noopener">Pro Football Reference page</a>`:""}
@@ -397,7 +407,7 @@ function render(){
 
   const games = D.games.filter(g=>g.date===sel).sort((a,b)=>(a.time||"").localeCompare(b.time||""));
   $("notice").innerHTML = inCurWeek(sel) ? "" :
-    `<p class="notice">${esc(fmtLong(sel))} is outside this refresh week (${esc(fmtDay(curWeekStart))} – ${esc(fmtDay(curWeekEnd))}). Birthdays and the schedule are accurate; milestones, rankings and news update when that week's Wednesday refresh runs.</p>`;
+    `<p class="notice">${esc(fmtLong(sel))} is outside the current refresh (${esc(fmtDay(curWeekStart))} – ${esc(fmtDay(curWeekEnd))}). Birthdays and the schedule are accurate; milestones, rankings and news update when that week's refresh runs.</p>`;
 
   const q = query.trim().toLowerCase();
   const all = [];
@@ -428,7 +438,7 @@ function render(){
 
   // summary + headlines
   const cnt = k => new Set(all.filter(x=>x.n.k.split(" ")[0]===k && !(k==="mile" && x.n.k.includes("soon"))).map(x=>x.p.id)).size;
-  const tiles = [["games","Games",games.length],["cake","Birthdays",cnt("cake")],["mile","Milestones in reach",cnt("mile")],["lead","All-time moves",cnt("lead")],["news","Off-field news",cnt("news")],["anniv","Family anniversaries",cnt("anniv")],["wed","Wedding anniversaries",cnt("wed")],["rev","Revenge games",cnt("rev")]];
+  const tiles = [["games","Games",games.length],["cake","Birthdays",cnt("cake")],["mile","Milestones in reach",cnt("mile")],["lead","All-time moves",cnt("lead")],["recap","Last-game notes",cnt("recap")],["news","Off-field news",cnt("news")],["anniv","Family anniversaries",cnt("anniv")],["wed","Wedding anniversaries",cnt("wed")],["rev","Revenge games",cnt("rev")]];
   $("summary").innerHTML = tiles.map(([k,l,v])=>`<button type="button" data-cat="${k}" aria-pressed="${cat===k}" ${!v?"disabled":""}><b>${v}</b><span>${l}</span><i class="go" aria-hidden="true">${k==="games"?"↓":cat===k?"×":"→"}</i></button>`).join("");
   $("summary").querySelectorAll("button").forEach(b=>b.onclick=()=>{
     const k=b.dataset.cat;
@@ -439,7 +449,7 @@ function render(){
   $("filterbar").innerHTML = cat ? `<div class="filterbar"><span>Showing only <b>${CATS[cat].toLowerCase()}</b> for ${esc(fmtLong(sel))}</span><button type="button" id="clearcat">Show everything</button></div>` : "";
   if (cat) $("clearcat").onclick = () => { cat = null; render(); };
   $("hltitle").textContent = cat ? CATS[cat] : "Top notes";
-  const label = {anniv:"Remember",wed:"Wedding",cake:"Bday",news:"News",lead:"All-time",mile:"Milestone",rev:"Revenge",rank:"Rank"};
+  const label = {recap:"Last game",anniv:"Remember",wed:"Wedding",cake:"Bday",news:"News",lead:"All-time",mile:"Milestone",rev:"Revenge",rank:"Rank"};
   const groups = new Map();
   for (const x of all) if (cat ? isCat(x.n) : x.n.pri<=5) { const g=groups.get(x.p.id)||{p:x.p,best:9,notes:[]}; g.notes.push(x.n); g.best=Math.min(g.best,x.n.pri); groups.set(x.p.id,g); }
   const top = [...groups.values()].sort((a,b)=>a.best-b.best||b.notes.length-a.notes.length);
@@ -447,7 +457,7 @@ function render(){
   $("headlines").innerHTML = top.length ? top.map(({p,notes})=>{
     const lines = notes.map(n=>{
       const k = n.k.split(" ")[0];
-      const src = n.news ? n.news.source : n.ann ? n.ann.source : null;
+      const src = n.news ? n.news.source : n.ann ? n.ann.source : n.recap ? n.recap.source : null;
       const extra = src ? ` <a href="${esc(src)}" target="_blank" rel="noopener">Source</a>` : "";
       const body = n.news ? n.news.detail : n.ann ? `${n.text}. ${n.ann.detail}` : n.text;
       return `<li><span class="k ${k}">${label[k]}</span><span>${esc(body)}${extra}</span></li>`;
@@ -459,7 +469,7 @@ function render(){
   $("foot").innerHTML = `Stats, depth charts, birthdays and schedule: <a href="https://github.com/nflverse" target="_blank" rel="noopener">nflverse</a> open data (depth charts sourced from ESPN). All-time leaderboard moves: <a href="${esc(D.pfr.source||"https://www.pro-football-reference.com/friv/upcoming-milestones.htm")}" target="_blank" rel="noopener">Pro Football Reference upcoming milestones</a>. Milestones are career regular-season totals and "in reach" means within about one game at the player's pace. Off-field news is researched by Claude and linked to its source.${others}`;
 }
 
-$("meta").innerHTML = `Refresh week <b>${esc(fmtDay(curWeekStart))} – ${esc(fmtDay(curWeekEnd))}</b><br>Stats through Week ${D.throughWeek} (last game: ${esc(D.lastGame||"")})<br>Updated ${esc(new Date(D.built).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit",timeZoneName:"short"}))} · ${D.players.length} players`;
+$("meta").innerHTML = `Covers <b>${esc(fmtDay(curWeekStart))} – ${esc(fmtDay(curWeekEnd))}</b><br>Stats through Week ${D.throughWeek} (last game: ${esc(D.lastGame||"")})<br>Updated ${esc(new Date(D.built).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit",timeZoneName:"short"}))} · ${D.players.length} players`;
 $("pick").min = gameDates[0]; $("pick").max = gameDates[gameDates.length-1];
 $("pick").onchange = e => { if (e.target.value) { sel = e.target.value; render(); } };
 $("q").oninput = e => { query = e.target.value; render(); };

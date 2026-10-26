@@ -13,6 +13,7 @@ Static site, deployed by Vercel on every push to `main`.
 | `build.py` | Pulls nflverse data (depth charts, stats, schedule, birthdays) and merges the three JSON files below into `data.js` |
 | `news.json` | Off-field personal news, researched and sourced |
 | `anniversaries.json` | Dated family losses and weddings, researched and sourced |
+| `recap.json` | Notable moments from each player's last game (records, career highs, streaks), researched and sourced |
 | `pfr_leaderboard.json` | Pro Football Reference "upcoming milestones and leaderboard movement" |
 | `robots.txt` | Keeps search engines from listing the site |
 
