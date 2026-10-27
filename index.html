@@ -15,7 +15,7 @@
   --bg:#f6f8f5; --paper:#ffffff; --ink:#16201a; --muted:#5b6a60; --rule:#d9e1db;
   --turf:#1d6b3e; --turf-soft:#e3f0e7; --hi:#ffe866; --hi-ink:#3d3300;
   --cake:#b4246a; --cake-soft:#fbe6f0; --loss:#4c5a73; --loss-soft:#e7ebf2;
-  --gold:#8a5a00; --gold-soft:#fbf0d9; --rev:#a33b10; --rev-soft:#fbe9df; --mem:#5b3f8f; --mem-soft:#eee8f7; --wed:#0f6e74; --wed-soft:#dff1f1; --rec:#2f4f8a; --rec-soft:#e4ebf7;
+  --gold:#8a5a00; --gold-soft:#fbf0d9; --rev:#c8102e; --rev-soft:#fde3e6; --mem:#5b3f8f; --mem-soft:#eee8f7; --wed:#0f6e74; --wed-soft:#dff1f1; --bon:#2f4f8a; --bon-soft:#e4ebf7;
   --display:"Saira Condensed","Arial Narrow",Arial,sans-serif;
   --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
@@ -24,12 +24,12 @@
   --bg:#0e1511; --paper:#151e18; --ink:#e6eee8; --muted:#94a59a; --rule:#26332b;
   --turf:#5fc58a; --turf-soft:#173323; --hi:#5c5211; --hi-ink:#fff4b0;
   --cake:#f07ab3; --cake-soft:#3a1828; --loss:#a9b6cf; --loss-soft:#232b3a;
-  --gold:#e9b85a; --gold-soft:#33280f; --rev:#f0916a; --rev-soft:#3a1f13; --mem:#c7b1f0; --mem-soft:#2a2240; --wed:#6fd3d6; --wed-soft:#123334; --rec:#9db8ec; --rec-soft:#1c2740; color-scheme:dark}}
+  --gold:#e9b85a; --gold-soft:#33280f; --rev:#ff6b78; --rev-soft:#3f1419; --mem:#c7b1f0; --mem-soft:#2a2240; --wed:#6fd3d6; --wed-soft:#123334; --bon:#9db8ec; --bon-soft:#1c2740; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0e1511; --paper:#151e18; --ink:#e6eee8; --muted:#94a59a; --rule:#26332b;
   --turf:#5fc58a; --turf-soft:#173323; --hi:#5c5211; --hi-ink:#fff4b0;
   --cake:#f07ab3; --cake-soft:#3a1828; --loss:#a9b6cf; --loss-soft:#232b3a;
-  --gold:#e9b85a; --gold-soft:#33280f; --rev:#f0916a; --rev-soft:#3a1f13; --mem:#c7b1f0; --mem-soft:#2a2240; --wed:#6fd3d6; --wed-soft:#123334; --rec:#9db8ec; --rec-soft:#1c2740; color-scheme:dark}
+  --gold:#e9b85a; --gold-soft:#33280f; --rev:#ff6b78; --rev-soft:#3f1419; --mem:#c7b1f0; --mem-soft:#2a2240; --wed:#6fd3d6; --wed-soft:#123334; --bon:#9db8ec; --bon-soft:#1c2740; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
 .wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
@@ -84,7 +84,7 @@ h2 small{font:500 13px var(--body);text-transform:none;letter-spacing:0;color:va
 .k.rank{background:var(--turf-soft);color:var(--turf)}
 .k.anniv{background:var(--mem-soft);color:var(--mem)}
 .k.wed{background:var(--wed-soft);color:var(--wed)}
-.k.recap{background:var(--rec-soft);color:var(--rec)}
+.k.bonus{background:var(--bon-soft);color:var(--bon)}
 .game{background:var(--paper);border:1px solid var(--rule);border-radius:10px;margin:14px 0;overflow:hidden}
 .ghead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;padding:10px 16px;border-bottom:2px solid var(--ink)}
 .ghead h3{margin:0;font:800 26px/1 var(--display);text-transform:uppercase;letter-spacing:.02em}
@@ -115,7 +115,8 @@ h2 small{font:500 13px var(--body);text-transform:none;letter-spacing:0;color:va
 .tag.anniv{background:var(--mem-soft);color:var(--mem);border-color:transparent}
 .tag.anniv.soon{background:transparent;border:1px dashed var(--mem)}
 .tag.wed{background:var(--wed-soft);color:var(--wed);border-color:transparent}
-.tag.recap{background:var(--rec-soft);color:var(--rec);border-color:transparent}
+.tag.bonus{background:var(--bon-soft);color:var(--bon);border-color:transparent}
+.tag.bonus.soon{background:transparent;border:1px dashed var(--bon)}
 .tag.wed.soon{background:transparent;border:1px dashed var(--wed)}
 .detail{padding:4px 16px 14px 66px;font-size:13.5px;color:var(--ink)}
 .detail dl{display:grid;grid-template-columns:max-content 1fr;gap:3px 12px;margin:0 0 8px}
@@ -219,7 +220,7 @@ img{max-width:100%}
     <span><i class="k news">News</i> off-field</span>
     <span><i class="k anniv">Remember</i> anniversary of a family loss</span>
     <span><i class="k wed">Wedding</i> wedding anniversary</span>
-    <span><i class="k recap">Last game</i> records and standouts from last game</span>
+    <span><i class="k bonus">Bonus</i> contract incentive in reach</span>
   </div>
 
   <h2 id="games-h">Games <small id="gsub"></small></h2>
@@ -260,8 +261,6 @@ for (const [name,stat,cur,need,place] of D.pfr.leaderboards||[]) {
 }
 const annBy = new Map();
 for (const a of ((D.anniv||{}).items||[])) for (const id of a.players||[]) (annBy.get(id)||annBy.set(id,[]).get(id)).push(a);
-const recapBy = new Map();
-for (const r of ((D.recap||{}).items||[])) for (const id of r.players||[]) (recapBy.get(id)||recapBy.set(id,[]).get(id)).push(r);
 const newsBy = new Map();
 for (const n of (D.news.items||[])) for (const id of n.players||[]) (newsBy.get(id)||newsBy.set(id,[]).get(id)).push(n);
 
@@ -282,8 +281,8 @@ let sel = (() => {
   return gameDates.find(d => d>=t) || gameDates[gameDates.length-1];
 })();
 let showAll = false, query = "", cat = null;
-const CATS = {recap:"Last-game notes",anniv:"Family anniversaries",wed:"Wedding anniversaries",cake:"Birthdays",mile:"Milestones in reach",lead:"All-time moves",news:"Off-field news",rev:"Revenge games"};
-const isCat = n => n.k.split(" ")[0]===cat && !(cat==="mile" && n.k.includes("soon"));
+const CATS = {bonus:"Bonuses in reach",anniv:"Family anniversaries",wed:"Wedding anniversaries",cake:"Birthdays",mile:"Milestones in reach",lead:"All-time moves",news:"Off-field news",rev:"Revenge games"};
+const isCat = n => n.k.split(" ")[0]===cat && !((cat==="mile"||cat==="bonus") && n.k.includes("soon"));
 try { showAll = localStorage.getItem("gd-all")==="1"; } catch(e){}
 $("all").checked = showAll;
 
@@ -330,7 +329,8 @@ function notesFor(p, game, s){
   }
   const live = inCurWeek(s); // stat notes only for this refresh week
   if (live) {
-    for (const r of recapBy.get(p.id)||[]) { const age=(parse(s)-parse(r.date))/DAY; if (age>0 && age<=13) out.push({k:"recap", pri:3, text:r.text, recap:r}); }
+    for (const b of p.bonuses||[]) if (b.status==="soon") out.push({k:"bonus soon", pri:8, text:`${num(b.need)} ${bunit(b.stat,b.need)} from a ${b.amount} bonus (within ~3 games)`, bonus:b});
+    for (const b of p.bonuses||[]) if (b.status==="next") out.push({k:"bonus", pri:2, text:`${num(b.need)} ${bunit(b.stat,b.need)} from a ${b.amount} bonus (${num(b.cur)}/${num(b.threshold)})`, bonus:b});
     for (const r of pfrL.get(p.id)||[]) out.push({k:"lead", pri:2, text:`Needs ${num(r.need)} to reach ${r.place} all-time in ${noun(r.stat)}`});
     const pm = pfrM.get(p.id)||[];
     for (const r of pm) out.push({k:"mile", pri:2, text:`${num(r.need)} away from ${r.target} career ${noun(r.stat)}`});
@@ -344,12 +344,19 @@ function notesFor(p, game, s){
   if (game) {
     const opp = game.home===p.team ? game.away : game.home;
     const f = (p.former||[]).find(x=>x.team===opp);
-    if (f) out.push({k:"rev", pri:5, text:`Vs. former team (${f.from===f.to?f.from:f.from+"–"+String(f.to).slice(2)})`});
+    if (f) out.push({k:"rev", pri:5, text:`Revenge: ${agoText(f.ago)} (${opp} ${f.from===f.to?f.from:f.from+"–"+String(f.to).slice(2)}) · ${f.line||""}`.replace(/ · $/,"")});
   }
   out.sort((a,b)=>a.pri-b.pri);
   return out;
 }
 
+function agoText(n){ return n===1 ? "previous team" : `${n} teams ago`; }
+function bunit(stat, n){
+  const u = {receptions:["catch","catches"],receiving_yards:["receiving yard","receiving yards"],receiving_tds:["receiving TD","receiving TDs"],
+    rushing_yards:["rushing yard","rushing yards"],rushing_tds:["rushing TD","rushing TDs"],scrim_yds:["scrimmage yard","scrimmage yards"],
+    total_td:["TD","TDs"],passing_yards:["passing yard","passing yards"],passing_tds:["TD pass","TD passes"],games:["game","games"]}[stat]||[stat,stat];
+  return n===1 ? u[0] : u[1];
+}
 function noun(stat){
   const m = {"Passing Yds":"passing yards","Passing TD":"passing TDs","Rushing Yds":"rushing yards","Rushing TD":"rushing TDs","Receiving Yds":"receiving yards","Receiving TD":"receiving TDs","Yds From Scrimmage":"scrimmage yards","All-Purpose Yds":"all-purpose yards","Touchdowns":"total TDs","Passes Completed":"completions","Pass Attempts":"pass attempts","Receptions":"receptions","Games":"games played"};
   return m[stat] || stat.toLowerCase();
@@ -364,14 +371,17 @@ function statLine(o, pos){
 
 function playerRow(p, game, s, notes){
   const age = p.birth ? ageOn(p.birth, s) : null;
-  const tags = notes.map(n=>`<span class="tag ${n.k}">${esc(n.k==="recap" ? "Last game: "+n.text : n.text)}</span>`).join("");
+  const tags = notes.map(n=>`<span class="tag ${n.k}">${esc(n.text)}</span>`).join("");
   const married = (annBy.get(p.id)||[]).filter(a=>a.kind==="wedding").map(a=>`<li>${esc(a.detail)} <a href="${esc(a.source)}" target="_blank" rel="noopener">Source</a></li>`).join("");
-  const rec = (recapBy.get(p.id)||[]).map(r=>`<li><b>${esc(fmtDay(r.date))}:</b> ${esc(r.text)} <a href="${esc(r.source)}" target="_blank" rel="noopener">Source</a></li>`).join("");
+  const bon = (p.bonuses||[]).map(b=>{
+    const prog = b.status==="earned" ? " <b>Earned</b>" : b.status ? ` (${num(b.cur)}/${num(b.threshold)}, needs ${num(b.need)})` : "";
+    return `<li>${esc(b.detail)}${prog}${b.notes?` <i>${esc(b.notes)}</i>`:""} <a href="${esc(b.source)}" target="_blank" rel="noopener">Source</a></li>`;
+  }).join("");
   const fam = (annBy.get(p.id)||[]).filter(a=>a.kind!=="wedding").map(a=>`<li>${esc(a.detail)} <a href="${esc(a.source)}" target="_blank" rel="noopener">Source</a></li>`).join("");
   const news = (newsBy.get(p.id)||[]).map(n=>`<li><b>${esc(fmtDay(n.date))}:</b> ${esc(n.detail)} <a href="${esc(n.source)}" target="_blank" rel="noopener">Source</a></li>`).join("");
   const miles = (p.milestones||[]).map(m=>`<li>${esc(m.text)}${m.tier==="soon"?" (within ~3 games)":""}</li>`).join("");
   const ranks = (p.ranks||[]).map(r=>`No. ${r.rank} ${esc(r.stat.toLowerCase())}`).join(" · ");
-  const former = (p.former||[]).map(f=>`${f.team} ${f.from===f.to?f.from:f.from+"–"+f.to}`).join(", ");
+  const former = (p.former||[]).map(f=>`${f.team} ${f.from===f.to?f.from:f.from+"–"+f.to}${f.line?` (${f.line})`:""}`).join("; ");
   return `<details class="prow"><summary>
     <span class="slot">${p.pos}${p.depth}</span>
     <span class="pname">${esc(p.name)}${age!=null?`<span class="age">${age}</span>`:""}</span>
@@ -387,7 +397,7 @@ function playerRow(p, game, s, notes){
     </dl>
     ${miles?`<b>Milestones</b><ul>${miles}</ul>`:""}
     ${news?`<b>Off the field</b><ul>${news}</ul>`:""}
-    ${rec?`<b>Last game</b><ul>${rec}</ul>`:""}
+    ${bon?`<b>2026 contract incentives</b><ul>${bon}</ul>`:""}
     ${married?`<b>Married</b><ul>${married}</ul>`:""}
     ${fam?`<b>Family losses</b><ul>${fam}</ul>`:""}
     ${p.pfr?`<a href="https://www.pro-football-reference.com/players/${p.pfr[0]}/${esc(p.pfr)}.htm" target="_blank" rel="noopener">Pro Football Reference page</a>`:""}
@@ -437,8 +447,8 @@ function render(){
   $("gsub").textContent = games.length ? `${games.length} on ${fmtLong(sel)}` : "";
 
   // summary + headlines
-  const cnt = k => new Set(all.filter(x=>x.n.k.split(" ")[0]===k && !(k==="mile" && x.n.k.includes("soon"))).map(x=>x.p.id)).size;
-  const tiles = [["games","Games",games.length],["cake","Birthdays",cnt("cake")],["mile","Milestones in reach",cnt("mile")],["lead","All-time moves",cnt("lead")],["recap","Last-game notes",cnt("recap")],["news","Off-field news",cnt("news")],["anniv","Family anniversaries",cnt("anniv")],["wed","Wedding anniversaries",cnt("wed")],["rev","Revenge games",cnt("rev")]];
+  const cnt = k => new Set(all.filter(x=>x.n.k.split(" ")[0]===k && !((k==="mile"||k==="bonus") && x.n.k.includes("soon"))).map(x=>x.p.id)).size;
+  const tiles = [["games","Games",games.length],["cake","Birthdays",cnt("cake")],["mile","Milestones in reach",cnt("mile")],["lead","All-time moves",cnt("lead")],["bonus","Bonuses in reach",cnt("bonus")],["news","Off-field news",cnt("news")],["anniv","Family anniversaries",cnt("anniv")],["wed","Wedding anniversaries",cnt("wed")],["rev","Revenge games",cnt("rev")]];
   $("summary").innerHTML = tiles.map(([k,l,v])=>`<button type="button" data-cat="${k}" aria-pressed="${cat===k}" ${!v?"disabled":""}><b>${v}</b><span>${l}</span><i class="go" aria-hidden="true">${k==="games"?"↓":cat===k?"×":"→"}</i></button>`).join("");
   $("summary").querySelectorAll("button").forEach(b=>b.onclick=()=>{
     const k=b.dataset.cat;
@@ -449,7 +459,7 @@ function render(){
   $("filterbar").innerHTML = cat ? `<div class="filterbar"><span>Showing only <b>${CATS[cat].toLowerCase()}</b> for ${esc(fmtLong(sel))}</span><button type="button" id="clearcat">Show everything</button></div>` : "";
   if (cat) $("clearcat").onclick = () => { cat = null; render(); };
   $("hltitle").textContent = cat ? CATS[cat] : "Top notes";
-  const label = {recap:"Last game",anniv:"Remember",wed:"Wedding",cake:"Bday",news:"News",lead:"All-time",mile:"Milestone",rev:"Revenge",rank:"Rank"};
+  const label = {bonus:"Bonus",anniv:"Remember",wed:"Wedding",cake:"Bday",news:"News",lead:"All-time",mile:"Milestone",rev:"Revenge",rank:"Rank"};
   const groups = new Map();
   for (const x of all) if (cat ? isCat(x.n) : x.n.pri<=5) { const g=groups.get(x.p.id)||{p:x.p,best:9,notes:[]}; g.notes.push(x.n); g.best=Math.min(g.best,x.n.pri); groups.set(x.p.id,g); }
   const top = [...groups.values()].sort((a,b)=>a.best-b.best||b.notes.length-a.notes.length);
@@ -457,7 +467,7 @@ function render(){
   $("headlines").innerHTML = top.length ? top.map(({p,notes})=>{
     const lines = notes.map(n=>{
       const k = n.k.split(" ")[0];
-      const src = n.news ? n.news.source : n.ann ? n.ann.source : n.recap ? n.recap.source : null;
+      const src = n.news ? n.news.source : n.ann ? n.ann.source : n.bonus ? n.bonus.source : null;
       const extra = src ? ` <a href="${esc(src)}" target="_blank" rel="noopener">Source</a>` : "";
       const body = n.news ? n.news.detail : n.ann ? `${n.text}. ${n.ann.detail}` : n.text;
       return `<li><span class="k ${k}">${label[k]}</span><span>${esc(body)}${extra}</span></li>`;
@@ -466,7 +476,7 @@ function render(){
   }).join("") : `<div class="empty">${cat ? `No ${CATS[cat].toLowerCase()} for this date.` : "No birthdays, milestones or news for this date."}</div>`;
 
   const others = pfrOther.length && inCurWeek(sel) ? ` Also on PFR's list but outside your tracked positions: ${pfrOther.map(o=>`${esc(o.name)} (${esc(o.stat.toLowerCase())})`).join(", ")}.` : "";
-  $("foot").innerHTML = `Stats, depth charts, birthdays and schedule: <a href="https://github.com/nflverse" target="_blank" rel="noopener">nflverse</a> open data (depth charts sourced from ESPN). All-time leaderboard moves: <a href="${esc(D.pfr.source||"https://www.pro-football-reference.com/friv/upcoming-milestones.htm")}" target="_blank" rel="noopener">Pro Football Reference upcoming milestones</a>. Milestones are career regular-season totals and "in reach" means within about one game at the player's pace. Off-field news is researched by Claude and linked to its source.${others}`;
+  $("foot").innerHTML = `Stats, depth charts, birthdays and schedule: <a href="https://github.com/nflverse" target="_blank" rel="noopener">nflverse</a> open data (depth charts sourced from ESPN). All-time leaderboard moves: <a href="${esc(D.pfr.source||"https://www.pro-football-reference.com/friv/upcoming-milestones.htm")}" target="_blank" rel="noopener">Pro Football Reference upcoming milestones</a>. Milestones are career regular-season totals and "in reach" means within about one game at the player's pace. Off-field news and contract incentives are researched by Claude and linked to their sources; incentives are shown only where specific thresholds were publicly reported.${others}`;
 }
 
 $("meta").innerHTML = `Covers <b>${esc(fmtDay(curWeekStart))} – ${esc(fmtDay(curWeekEnd))}</b><br>Stats through Week ${D.throughWeek} (last game: ${esc(D.lastGame||"")})<br>Updated ${esc(new Date(D.built).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit",timeZoneName:"short"}))} · ${D.players.length} players`;

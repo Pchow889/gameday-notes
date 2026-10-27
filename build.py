@@ -7,7 +7,7 @@ Merges two hand-researched inputs from the same folder:
   pfr_leaderboard.json  - Pro Football Reference "Upcoming Milestones and Leaderboard Movement"
   news.json             - notable personal/off-field events
   anniversaries.json    - dated family losses and weddings for anniversary flags
-  recap.json            - notable moments from each player's last game (records, career highs, streaks)
+  bonuses.json          - publicly reported 2026 contract incentives (thresholds checked against 2026 stats)
 Writes data.js (window.GAMEDAY = {...}) for the page.
 
 Usage: python3 -I build.py <workdir>
@@ -66,7 +66,20 @@ STATS.update({"scrim_yds": "Scrimmage Yds", "total_td": "Rush+Rec TD"})
 career = reg.groupby("player_id")[list(STATS)].sum()
 season = reg[reg.season == SEASON].set_index("player_id")
 # teams by season, for former-team flags
-team_hist = reg.groupby(["player_id", "recent_team"]).season.agg(["min", "max"]).reset_index()
+team_hist = reg.groupby(["player_id", "recent_team"]).agg(
+    first=("season", "min"), last=("season", "max"), games=("games", "sum"),
+    passing_yards=("passing_yards", "sum"), passing_tds=("passing_tds", "sum"),
+    rushing_yards=("rushing_yards", "sum"), rushing_tds=("rushing_tds", "sum"),
+    receptions=("receptions", "sum"), receiving_yards=("receiving_yards", "sum"),
+    receiving_tds=("receiving_tds", "sum")).reset_index()
+
+def team_line(r, pos):
+    g = f"{int(r.games)} G"
+    if pos == "QB":
+        return f"{g}, {fmt(r.passing_yards)} pass yds, {int(r.passing_tds)} TD"
+    if pos == "RB":
+        return f"{g}, {fmt(r.rushing_yards)} rush yds, {int(r.rushing_tds + r.receiving_tds)} TD"
+    return f"{g}, {int(r.receptions)} rec, {fmt(r.receiving_yards)} yds, {int(r.receiving_tds)} TD"
 
 wk = pd.read_csv(f"stats_player_week_{SEASON}.csv", low_memory=False)
 wk = wk[wk.season_type == "REG"]
@@ -171,6 +184,30 @@ def iso(d):
     except Exception:
         return None
 
+BONUS = {}
+try:
+    for b in json.load(open("bonuses.json")).get("items", []):
+        BONUS.setdefault(b["player"], []).append(b)
+except FileNotFoundError:
+    pass
+
+def bonus_for(pid, s):
+    out = []
+    for b in BONUS.get(pid, []):
+        o = {k: b.get(k) for k in ("stat", "threshold", "amount", "detail", "notes", "source")}
+        if b.get("stat") in STATS and b.get("threshold") is not None:
+            cur = float(s[b["stat"]]) if s is not None else 0.0
+            g = float(s["games"]) if s is not None else 0.0
+            need = float(b["threshold"]) - cur
+            pace = cur / g if g else 0.0
+            o["cur"] = int(cur)
+            o["need"] = max(int(math.ceil(need)), 0)
+            o["status"] = ("earned" if need <= 0 else
+                           "next" if (b["stat"] == "games" and need <= 1) or (b["stat"] != "games" and pace > 0 and need <= pace * 1.1) else
+                           "soon" if b["stat"] != "games" and pace > 0 and need <= pace * 3 else "open")
+        out.append(o)
+    return out
+
 tracked = []
 for _, row in dc.iterrows():
     pid = row.gsis_id
@@ -186,8 +223,9 @@ for _, row in dc.iterrows():
     c = career.loc[pid] if pid in career.index else None
     s = season.loc[pid] if pid in season.index else None
     th = team_hist[team_hist.player_id == pid]
-    former = [{"team": t, "from": int(a), "to": int(b)} for t, a, b in zip(th.recent_team, th["min"], th["max"])
-              if t != row.team]
+    th = th[th.recent_team != row.team].sort_values(["last", "first"], ascending=False)
+    former = [{"team": r.recent_team, "from": int(r.first), "to": int(r["last"]), "ago": i + 1,
+               "line": team_line(r, pos)} for i, (_, r) in enumerate(th.iterrows())]
     def stat_line(src):
         if src is None:
             return None
@@ -208,6 +246,7 @@ for _, row in dc.iterrows():
         "headshot": p.headshot if p is not None and isinstance(p.headshot, str) else None,
         "career": stat_line(c), "season": stat_line(s),
         "milestones": milestones(pid, pos), "ranks": lr, "former": former,
+        "bonuses": bonus_for(pid, s),
     })
 
 sched = []
@@ -229,7 +268,6 @@ def load(name, default):
 pfr = load("pfr_leaderboard.json", {"asof": None, "milestones": [], "leaderboards": []})
 news = load("news.json", {"asof": None, "items": []})
 anniv = load("anniversaries.json", {"asof": None, "researched": [], "items": []})
-recap = load("recap.json", {"asof": None, "items": []})
 # Refresh window: from the build day (Central time) through the Tuesday after the next Sunday,
 # so a Monday or Wednesday run covers Thursday, Sunday and Monday night games.
 # Override with --window YYYY-MM-DD YYYY-MM-DD.
@@ -245,7 +283,7 @@ out = {
     "season": SEASON, "throughWeek": through_week,
     "lastGame": None if last_played is None else f"{last_played.away_team} at {last_played.home_team}, {pd.to_datetime(last_played.gameday):%a %b} {pd.to_datetime(last_played.gameday).day}",
     "depthChartAsOf": dc_time,
-    "games": sched, "players": tracked, "pfr": pfr, "news": news, "anniv": anniv, "recap": recap,
+    "games": sched, "players": tracked, "pfr": pfr, "news": news, "anniv": anniv,
 }
 with open("data.js", "w") as fh:
     fh.write("window.GAMEDAY=" + json.dumps(out, separators=(",", ":")) + ";\n")
