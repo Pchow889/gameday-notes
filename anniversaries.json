@@ -1,5 +1,5 @@
 {
- "asof": "2026-10-26",
+ "asof": "2026-11-03",
  "researched": [
   "00-0023459",
   "00-0026498",
@@ -142,7 +142,31 @@
   "00-0041489",
   "00-0041511",
   "00-0041523",
-  "00-0041547"
+  "00-0041547",
+  "00-0035289",
+  "00-0041070",
+  "00-0035993",
+  "00-0041496",
+  "00-0039163",
+  "00-0040583",
+  "00-0034383",
+  "00-0036554",
+  "00-0037525",
+  "00-0040743",
+  "00-0033906",
+  "00-0036040",
+  "00-0037239",
+  "00-0039424",
+  "00-0039923",
+  "00-0040715",
+  "00-0037838",
+  "00-0039337",
+  "00-0041042",
+  "00-0039165",
+  "00-0037834",
+  "00-0033280",
+  "00-0033288",
+  "00-0035719"
  ],
  "items": [
   {
@@ -271,7 +295,7 @@
    "name": "Orbin Love",
    "date": null,
    "precision": "none",
-   "detail": "Jordan Love's father, Orbin, a police officer, died by suicide when Jordan was 14 (around 2012\u201313). Love wrote about it in The Players' Tribune in 2025.",
+   "detail": "Jordan Love's father, Orbin, a police officer, died by suicide when Jordan was 14 (around 2012–13). Love wrote about it in The Players' Tribune in 2025.",
    "source": "https://en.wikipedia.org/wiki/Jordan_Love",
    "kind": "loss"
   },
@@ -297,7 +321,7 @@
    "name": "Mickey Evans",
    "date": null,
    "precision": "none",
-   "detail": "Mike Evans' father, Mickey, was killed by a family member at their Galveston, Texas, home when Mike was 9 (around 2002\u201303). Evans has spoken about forgiving the killer.",
+   "detail": "Mike Evans' father, Mickey, was killed by a family member at their Galveston, Texas, home when Mike was 9 (around 2002–03). Evans has spoken about forgiving the killer.",
    "source": "https://www.tampabay.com/mike-evans-opens-up-about-overcoming-fathers-murder/2274753",
    "kind": "loss"
   },
@@ -885,6 +909,71 @@
    "date": "2025-06-14",
    "detail": "Sam LaPorta married Callahan Dellinger in a Catholic ceremony on June 14, 2025; Pope Leo XIV blessed the couple 10 days later.",
    "source": "https://www.prideofdetroit.com/2025/6/25/24455462/lions-news-sam-laporta-gets-blessed-by-new-pope"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0033280"
+   ],
+   "team": "SF",
+   "relation": "wife",
+   "name": "Olivia Culpo",
+   "date": "2024-06-29",
+   "precision": "day",
+   "detail": "Christian McCaffrey married Olivia Culpo on June 29, 2024, at Watch Hill Chapel in Watch Hill, Rhode Island.",
+   "source": "https://www.theknot.com/content/olivia-culpo-relationship"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0033288"
+   ],
+   "team": "SF",
+   "relation": "wife",
+   "name": "Claire Till",
+   "date": "2020-03-27",
+   "precision": "month",
+   "detail": "George Kittle married Claire Till in March 2020; their wedding registry listed March 27, 2020.",
+   "source": "https://insideweddings.com/news/celebrity-style/george-kittle-from-the-san-francisco-49ers-got-married/42764/"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0037834"
+   ],
+   "team": "SF",
+   "relation": "wife",
+   "name": "Jenna Brandt",
+   "date": "2024-03-09",
+   "precision": "day",
+   "detail": "Brock Purdy married his college sweetheart Jenna Brandt on Saturday, March 9, 2024, in Des Moines, Iowa.",
+   "source": "https://www.si.com/nfl/2024/03/10/brock-purdy-49ers-quarterback-marries-college-sweetheart"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0039923"
+   ],
+   "team": "NYG",
+   "relation": "wife",
+   "name": "Katya Kuropas",
+   "date": "2026-04-11",
+   "precision": "day",
+   "detail": "J.J. McCarthy married his high school sweetheart Katya Kuropas on April 11, 2026, at the Zadun Ritz-Carlton in Los Cabos, Mexico.",
+   "source": "https://clutchpoints.com/celebrity/jj-mccarthy-marries-longtime-partner-katya-kuropas"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0037838"
+   ],
+   "team": "NYG",
+   "relation": "wife",
+   "name": "Melanie",
+   "date": "2025-07-01",
+   "precision": "month",
+   "detail": "Isaiah Likely married his wife Melanie at San Francisco City Hall in July 2025.",
+   "source": "https://www.si.com/onsi/athlete-lifestyle/isaiah-likely-s-wife-melanie-shares-sweet-post-after-giants-win"
   }
  ]
 }

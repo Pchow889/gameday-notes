@@ -1,5 +1,5 @@
 {
-  "asof": "2026-10-26",
+  "asof": "2026-11-03",
   "items": [
     {
       "date": "2026-10-10",
@@ -104,6 +104,40 @@
       "headline": "Brought his mom on set after first win",
       "detail": "After his first NFL win (at Dallas on Thursday Night Football, Oct. 9), undrafted rookie Jalon Daniels called his mother, Star, onto the Prime Video postgame set. She had flown in from California.",
       "source": "https://fox13news.com/news/ma-come-here-bucs-qb-jalon-daniels-shares-postgame-moment-mom-after-first-nfl-win"
+    },
+    {
+      "date": "2026-11-02",
+      "type": "expecting",
+      "players": [
+        "00-0033949"
+      ],
+      "team": "DET",
+      "until": "2027-05-31",
+      "headline": "First baby on the way",
+      "detail": "Joshua Dobbs and his wife Jocelyn Lara, who married May 24, announced on Instagram on Monday, Nov. 2 that they're expecting their first child (\"Half of you, half of me\").",
+      "source": "https://jingletree.com/lions-qb-josh-dobbs-shares-life-changing-news-months-after-wedding-300639.html"
+    },
+    {
+      "date": "2026-11-01",
+      "type": "personal",
+      "players": [
+        "00-0035700"
+      ],
+      "team": "GB",
+      "headline": "Denies new abuse allegations",
+      "detail": "Police records released Oct. 31 show three women reported past abuse allegations against Josh Jacobs (2021-22 incidents). His lawyers said on Sunday, Nov. 1 that he has \"a substantial body of tangible evidence\" disputing them. The NFL says its investigation is ongoing. Jacobs pleaded no contest in September to two misdemeanors from his May arrest and missed the first six games on the Commissioner's Exempt List.",
+      "source": "https://www.nfl.com/news/lawyers-say-packers-josh-jacobs-has-tangible-evidence-disputing-allegations-from-other-women"
+    },
+    {
+      "date": "2026-11-04",
+      "type": "personal",
+      "players": [
+        "00-0031588"
+      ],
+      "team": "WAS",
+      "headline": "Son turns 1 on Nov. 4",
+      "detail": "Stefon Diggs and Cardi B's son was born Nov. 4, 2025 (Cardi B's Instagram caption \"11/4\"), so he turns 1 on Wednesday, Nov. 4.",
+      "source": "https://www.si.com/nfl/patriots/onsi/news/stefon-diggs-cardi-b-dress-newborn-new-england-patriots-gear"
     }
   ]
 }

@@ -1,18 +1,1 @@
-{"asof":"2026-10-26","source":"https://www.pro-football-reference.com/friv/upcoming-milestones.htm",
-"milestones":[
-["Christian McCaffrey","Rushing Yds",7978,"8,000",22],["Derrick Henry","Rushing TD",129,"130",1],["Odell Beckham Jr.","Receiving Yds",7987,"8,000",13],
-["CeeDee Lamb","Receiving Yds",7993,"8,000",7],["Ja'Marr Chase","Receiving TD",59,"60",1],["Odell Beckham Jr.","Receiving TD",59,"60",1],
-["Cooper Kupp","Receptions",699,"700",1],["Amon-Ra St. Brown","Receptions",593,"600",7],["Andy Dalton","Passing Yds",39793,"40,000",207],
-["Lamar Jackson","Pass Attempts",2984,"3,000",16],["Cameron Jordan","Games",249,"250",1],["Matt Gay","Field Goals Made",199,"200",1],
-["Josh Allen","Touchdowns",89,"90",1],["Stefon Diggs","Touchdowns",79,"80",1],["Ja'Marr Chase","Touchdowns",59,"60",1],
-["Jahmyr Gibbs","Touchdowns",58,"60",2],["Stefon Diggs","All-Purpose Yds",11955,"12,000",45]],
-"leaderboards":[
-["Christian McCaffrey","Yds From Scrimmage",13619,79,"41st"],["Travis Kelce","Yds From Scrimmage",13361,17,"46th"],["Jason Myers","Points Scored",1347,3,"41st"],
-["Wil Lutz","Points Scored",1210,3,"49th"],["Derrick Henry","Rushing Yds",13597,65,"8th"],["Saquon Barkley","Rushing Yds",8538,59,"42nd"],
-["Jonathan Taylor","Rushing Yds",8185,3,"48th"],["Jonathan Taylor","Rushing TD",77,1,"24th"],["Travis Kelce","Receiving Yds",13345,37,"18th"],
-["Keenan Allen","Receiving Yds",12309,42,"27th"],["Stefon Diggs","Receptions",966,4,"20th"],["Johnny Hekker","Punting Yds",49228,53,"12th"],
-["Bryan Anger","Punting Yds",44419,74,"24th"],["Tress Way","Punting Yds",40396,133,"35th"],["Johnny Hekker","Punts",1053,2,"21st"],
-["Sam Martin","Punts",831,3,"49th"],["Patrick Mahomes","Passing Yds",37413,215,"30th"],["Joe Flacco","Passing TD",272,1,"21st"],
-["Jared Goff","Passing TD",270,2,"22nd"],["Andy Dalton","Passing TD",254,1,"26th"],["Patrick Mahomes","Passes Completed",3217,5,"29th"],
-["Josh Allen","Passes Completed",2729,4,"44th"],["Dak Prescott","Pass Attempts",5005,19,"35th"],["Calais Campbell","Games",285,1,"19th"],
-["Aaron Rodgers","Games",271,1,"29th"],["Jon Weeks","Games",268,1,"33rd"],["Ka'imi Fairbairn","Field Goals Made",270,2,"46th"]]}
+{"asof":"2026-11-03","source":"https://www.pro-football-reference.com/friv/upcoming-milestones.htm","note":"PFR's page was serving a stale snapshot on Nov 3, so the Oct 26 PFR list was advanced with nflverse Week 8 box scores. Entries already reached were dropped; next targets past them are not known until PFR updates.","milestones":[["Christian McCaffrey","Rushing Yds",7978,"8,000",22],["Odell Beckham Jr.","Receiving Yds",7987,"8,000",13],["Odell Beckham Jr.","Receiving TD",59,"60",1],["Andy Dalton","Passing Yds",39793,"40,000",207],["Lamar Jackson","Pass Attempts",2985,"3,000",15],["Cameron Jordan","Games",249,"250",1],["Jahmyr Gibbs","Touchdowns",59,"60",1],["Stefon Diggs","All-Purpose Yds",11993,"12,000",7]],"leaderboards":[["Christian McCaffrey","Yds From Scrimmage",13619,79,"41st"],["Derrick Henry","Rushing Yds",13650,12,"8th"],["Saquon Barkley","Rushing Yds",8568,29,"42nd"],["Jonathan Taylor","Rushing TD",77,1,"24th"],["Stefon Diggs","Receptions",969,1,"20th"],["Johnny Hekker","Punting Yds",49228,53,"12th"],["Johnny Hekker","Punts",1053,2,"21st"],["Joe Flacco","Passing TD",272,1,"21st"],["Jared Goff","Passing TD",271,1,"22nd"],["Andy Dalton","Passing TD",254,1,"26th"],["Calais Campbell","Games",285,1,"19th"],["Jon Weeks","Games",268,1,"33rd"],["Ka'imi Fairbairn","Field Goals Made",270,2,"46th"]]}
