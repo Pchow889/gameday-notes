@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-03",
+ "asof": "2026-11-13",
  "researched": [
   "00-0023459",
   "00-0026498",
@@ -166,7 +166,14 @@
   "00-0037834",
   "00-0033280",
   "00-0033288",
-  "00-0035719"
+  "00-0035719",
+  "00-0041561",
+  "00-0041562",
+  "00-0037263",
+  "00-0040014",
+  "00-0036849",
+  "00-0032951",
+  "00-0028118"
  ],
  "items": [
   {
@@ -974,6 +981,19 @@
    "precision": "month",
    "detail": "Isaiah Likely married his wife Melanie at San Francisco City Hall in July 2025.",
    "source": "https://www.si.com/onsi/athlete-lifestyle/isaiah-likely-s-wife-melanie-shares-sweet-post-after-giants-win"
+  },
+  {
+   "kind": "wedding",
+   "players": [
+    "00-0028118"
+   ],
+   "team": "GB",
+   "relation": "wife",
+   "name": "Bianka Charity-Parker",
+   "date": "2026-07-01",
+   "precision": "month",
+   "detail": "Tyrod Taylor married Bianka Charity-Parker in July 2026 at Wildflower Farms in New York's Hudson Valley.",
+   "source": "https://sports.yahoo.com/articles/tyrod-taylor-gets-married-starts-160042760.html"
   }
  ]
 }

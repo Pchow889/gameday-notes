@@ -1,5 +1,5 @@
 {
-  "asof": "2026-11-03",
+  "asof": "2026-11-13",
   "items": [
     {
       "date": "2026-10-10",
@@ -138,6 +138,30 @@
       "headline": "Son turns 1 on Nov. 4",
       "detail": "Stefon Diggs and Cardi B's son was born Nov. 4, 2025 (Cardi B's Instagram caption \"11/4\"), so he turns 1 on Wednesday, Nov. 4.",
       "source": "https://www.si.com/nfl/patriots/onsi/news/stefon-diggs-cardi-b-dress-newborn-new-england-patriots-gear"
+    },
+    {
+      "date": "2026-11-10",
+      "type": "expecting",
+      "players": [
+        "00-0033873"
+      ],
+      "team": "KC",
+      "until": "2027-06-30",
+      "headline": "Baby No. 4 on the way",
+      "detail": "Patrick and Brittany Mahomes announced on Instagram on Tuesday, Nov. 10 that they're expecting their fourth child (\"& then there were 6\"). No due date was shared.",
+      "source": "https://www.si.com/onsi/athlete-lifestyle/patrick-mahomes-wife-brittany-announce-significant-family-update"
+    },
+    {
+      "date": "2026-11-11",
+      "type": "expecting",
+      "players": [
+        "00-0035704"
+      ],
+      "team": "SEA",
+      "until": "2027-05-31",
+      "headline": "Third child due in May",
+      "detail": "Drew Lock and his wife Natalie announced on Wednesday, Nov. 11 that they're expecting their third child, due in May 2027. They have a son, Layton, and a daughter, Landry. Lock has been starting in place of the injured Sam Darnold.",
+      "source": "https://www.essentiallysports.com/nfl-active-news-seahawks-messages-pour-in-from-sam-darnolds-wife-katie-others-as-seahawks-backup-qb-announces-personal-news/"
     }
   ]
 }
