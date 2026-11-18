@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-13",
+ "asof": "2026-11-18",
  "researched": [
   "00-0023459",
   "00-0026498",
@@ -173,7 +173,13 @@
   "00-0040014",
   "00-0036849",
   "00-0032951",
-  "00-0028118"
+  "00-0028118",
+  "00-0041132",
+  "00-0035685",
+  "00-0036973",
+  "00-0041029",
+  "00-0039398",
+  "00-0040170"
  ],
  "items": [
   {
@@ -994,6 +1000,19 @@
    "precision": "month",
    "detail": "Tyrod Taylor married Bianka Charity-Parker in July 2026 at Wildflower Farms in New York's Hudson Valley.",
    "source": "https://sports.yahoo.com/articles/tyrod-taylor-gets-married-starts-160042760.html"
+  },
+  {
+   "kind": "loss",
+   "players": [
+    "00-0041132"
+   ],
+   "team": "IND",
+   "relation": "mother",
+   "name": "Dionne Bolden",
+   "date": "2016-05-13",
+   "precision": "day",
+   "detail": "Deion Burks' mother, Dionne Bolden, died of asthma complications on May 13, 2016, days after Mother's Day, at 42. He was 13 and was raised by his father, Daniel.",
+   "source": "https://www.essentiallysports.com/ncaa-college-football-news-how-did-deion-burks-mother-die-when-did-the-tragedy-take-place"
   }
  ]
 }
