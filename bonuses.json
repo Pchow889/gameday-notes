@@ -869,6 +869,163 @@
       "detail": "$250K playing-time incentive",
       "notes": "Threshold not reported",
       "source": "https://www.si.com/nfl/giants/onsi/giants-players-to-earn-bonuses-01m7g63kkc46"
+    },
+    {
+      "player": "00-0038542",
+      "name": "Bijan Robinson",
+      "team": "ATL",
+      "stat": "receiving_yards",
+      "threshold": 800,
+      "amount": "~$984K",
+      "detail": "800 receiving yards adds $562.5K to his 2029 salary and $421.9K to 2030",
+      "notes": "Paid as future base-salary escalators, not 2026 cash; each again if ATL reaches the divisional round. $750K for MVP.",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-bijan-robinson-deal"
+    },
+    {
+      "player": "00-0039139",
+      "name": "Jahmyr Gibbs",
+      "team": "DET",
+      "stat": "receiving_yards",
+      "threshold": 800,
+      "amount": "~$984K",
+      "detail": "800 receiving yards adds $562.5K to his 2029 salary and $421.9K to 2030",
+      "notes": "Paid as future base-salary escalators, not 2026 cash; each again if DET reaches the divisional round. $750K for MVP.",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-jahmyr-gibbs-deal"
+    },
+    {
+      "player": "00-0037238",
+      "name": "Drake London",
+      "team": "ATL",
+      "stat": "receiving_yards",
+      "threshold": 1200,
+      "amount": "$2M",
+      "detail": "A qualifying season (1,200 yards, 110 catches or 10 TDs) adds $1M to 2029 and $1M to 2030 salary",
+      "notes": "Paid as future base-salary escalators, not 2026 cash; any one of the three qualifies (also All-Pro).",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-drake-london-deal"
+    },
+    {
+      "player": "00-0037238",
+      "name": "Drake London",
+      "team": "ATL",
+      "stat": "receptions",
+      "threshold": 110,
+      "amount": "$2M",
+      "detail": "A qualifying season (110 catches, 1,200 yards or 10 TDs) adds $1M to 2029 and $1M to 2030 salary",
+      "notes": "Paid as future base-salary escalators, not 2026 cash; any one of the three qualifies.",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-drake-london-deal"
+    },
+    {
+      "player": "00-0037238",
+      "name": "Drake London",
+      "team": "ATL",
+      "stat": "receiving_tds",
+      "threshold": 10,
+      "amount": "$2M",
+      "detail": "A qualifying season (10 TDs, 110 catches or 1,200 yards) adds $1M to 2029 and $1M to 2030 salary",
+      "notes": "Paid as future base-salary escalators, not 2026 cash; any one of the three qualifies.",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-drake-london-deal"
+    },
+    {
+      "player": "00-0036970",
+      "name": "Kyle Pitts Sr.",
+      "team": "ATL",
+      "stat": "receptions",
+      "threshold": 80,
+      "amount": "$250K",
+      "detail": "80 catches or 900 receiving yards in 2026 adds $250K to his 2028 salary",
+      "notes": "Paid as future base-salary escalators, not 2026 cash; either one qualifies. Another $250K for a 2026 Pro Bowl/All-Pro.",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-kyle-pitts-deal"
+    },
+    {
+      "player": "00-0036970",
+      "name": "Kyle Pitts Sr.",
+      "team": "ATL",
+      "stat": "receiving_yards",
+      "threshold": 900,
+      "amount": "$250K",
+      "detail": "900 receiving yards or 80 catches in 2026 adds $250K to his 2028 salary",
+      "notes": "Paid as future base-salary escalators, not 2026 cash; either one qualifies.",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-kyle-pitts-deal"
+    },
+    {
+      "player": "00-0038120",
+      "name": "Breece Hall",
+      "team": "NYJ",
+      "stat": "scrim_yds",
+      "threshold": 1416,
+      "amount": "$250K",
+      "detail": "$250K at 1,416 scrimmage yards",
+      "notes": "Annual incentive; also $250K for 7 rushing TDs and $250K for a Pro Bowl",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-breece-hall-deal"
+    },
+    {
+      "player": "00-0038120",
+      "name": "Breece Hall",
+      "team": "NYJ",
+      "stat": "rushing_tds",
+      "threshold": 7,
+      "amount": "$250K",
+      "detail": "$250K at 7 rushing TDs",
+      "notes": "Annual incentive",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-breece-hall-deal"
+    },
+    {
+      "player": "00-0038120",
+      "name": "Breece Hall",
+      "team": "NYJ",
+      "stat": "other",
+      "threshold": null,
+      "amount": "$250K",
+      "detail": "$250K for a Pro Bowl selection",
+      "notes": "Annual incentive",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-breece-hall-deal"
+    },
+    {
+      "player": "00-0034844",
+      "name": "Saquon Barkley",
+      "team": "PHI",
+      "stat": "scrim_yds",
+      "threshold": 1500,
+      "amount": "$250K",
+      "detail": "$250K at 1,500 scrimmage yards",
+      "notes": "Annual; rises to $500K at 2,000. Earned incentives also raise later base salaries.",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-new-saquon-barkley-deal"
+    },
+    {
+      "player": "00-0034844",
+      "name": "Saquon Barkley",
+      "team": "PHI",
+      "stat": "scrim_yds",
+      "threshold": 2000,
+      "amount": "$500K",
+      "detail": "$500K at 2,000 scrimmage yards",
+      "notes": "Annual; replaces the 1,500-yard tier",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-new-saquon-barkley-deal"
+    },
+    {
+      "player": "00-0034844",
+      "name": "Saquon Barkley",
+      "team": "PHI",
+      "stat": "other",
+      "threshold": null,
+      "amount": "$250K-$500K",
+      "detail": "1,000 rushing yards plus an NFC title ($250K) or Super Bowl win ($500K); $250K Pro Bowl / $500K first-team All-Pro",
+      "notes": "Annual",
+      "source": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-new-saquon-barkley-deal"
+    },
+    {
+      "player": "00-0035261",
+      "name": "Tony Pollard",
+      "team": "TEN",
+      "stat": "rushing_yards",
+      "threshold": 1100,
+      "amount": "$250K",
+      "detail": "$250K at 1,100 rushing yards",
+      "notes": "Reported as his incentive in both 2024 and 2025; his deal has $750K of annual incentives through 2026, so assumed to carry over",
+      "source": "https://www.si.com/nfl/titans/onsi/news/tennessee-titans-tony-pollard-kenneth-murray-jr-playing-major-incentives-week-18"
     }
-  ]
+  ],
+  "coverage": {
+    "note": "Stat incentives verified for 2026 from public reporting. Teams added Nov. 20: NYG, ATL, DET, NYJ, PHI, TEN. Contracts checked with no 2026 stat incentives reported: Derrick Henry, Mark Andrews, Zay Flowers, Jake Ferguson, Javonte Williams, David Montgomery (per-game roster bonus only). Not public: Stefon Diggs (WAS, 'up to $12M'), Darren Waller, Dawson Knox, Dallas Goedert, Rachaad White, Tua Tagovailoa, Khalil Shakir."
+  }
 }
