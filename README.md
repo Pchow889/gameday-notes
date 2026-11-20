@@ -1,6 +1,6 @@
 # Gameday Notes
 
-Gameday prep sheet for NFL QB1–2, RB1–3, WR1–5 and TE1–3 on all 32 teams: birthdays, milestones in reach, all-time leaderboard moves, 2026 ranks, revenge games (previous team / 2 teams ago, with stats there), contract bonuses in reach, off-field news, and family-loss and wedding anniversaries.
+Gameday prep sheet for NFL QB1–2, RB1–3, WR1–5 and TE1–3 on all 32 teams: birthdays, milestones in reach, all-time leaderboard moves, 2026 ranks, revenge games (previous team / 2 teams ago, with stats there), contract bonuses in reach (plus a Bonuses tab listing every tracked incentive, closest first), off-field news, and family-loss and wedding anniversaries.
 
 Static site, deployed by Vercel on every push to `main`.
 
